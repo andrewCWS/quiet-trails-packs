@@ -82,10 +82,15 @@ total — about $0.78 on ElevenLabs multilingual, $0.39 on Flash, $0.12 on Fish.
 
 These are load-bearing — the parser depends on them.
 
-- Speaker tags are `**NARRATOR:**`, `**ECHO:**`, `**RORI:**`, `**BILLY:**`,
-  `**SKYE:**`, `**ADI:**`, `**ALL:**`. Anything else in `**Bold:**` form is
-  treated as metadata and ignored, which is what keeps header lines out of the
-  audio.
+- Speaker tags are `**NARRATOR:**` and `**ECHO:**`. The kids' dialogue lives
+  inside the narrator's prose, attributed — `"There's something there,"
+  whispered Rori.` A five-year-old could not follow the earlier tagged-dialogue
+  version; the tag is invisible in audio. Verse stories are single voice
+  throughout. Full reasoning in the spec under *Who is speaking*.
+- `**RORI:**`, `**BILLY:**`, `**SKYE:**`, `**ADI:**` and `**ALL:**` are still
+  accepted by the parser but no longer used. Anything else in `**Bold:**` form
+  is treated as metadata and ignored, which keeps header lines out of the
+  audio — the parser warns on unknown all-caps tags.
 - Stage directions in `(round brackets)` only. Never italics — italics are
   ambiguous against emphasis. `(whispering)` is stripped; `*that's not a number*`
   is dialogue and must survive.

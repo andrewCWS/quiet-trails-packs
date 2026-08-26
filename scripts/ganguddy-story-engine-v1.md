@@ -11,13 +11,45 @@ First destination: **Ganguddy (Dunns Swamp), Wollemi National Park, NSW.**
 |---|---|
 | Length | 900–1100 words (~5 min). See pacing note below. |
 | Target listener | Smart 5-year-old, with a 2-year-old in the car |
-| Speaker tags | Always. `NARRATOR:` `ECHO:` `RORI:` `BILLY:` `SKYE:` `ADI:` `ALL:` — and nothing else. Any other `**ALLCAPS:**` tag is treated as metadata and silently dropped, so the generator now warns when it sees one. |
+| Speaker tags | `NARRATOR:` and `ECHO:` only. The kids speak inside the narrator's prose, attributed. See *Who is speaking* below. Any other `**ALLCAPS:**` tag is treated as metadata and silently dropped, so the generator warns when it sees one. |
 | Stage directions | Round brackets only — `(whispering)`, `(a pause)`. Never italics; the generator strips brackets but italics are ambiguous against emphasis. |
 | Fact budget | ~90 words max per story, in no more than 2 chunks, never in the final 60 seconds |
 | Fact trigger | **No fact enters a story without a physical object the kids find.** No lecturing. |
 | Stretch vocabulary | 2–3 new words per story, each used 3 times in context |
 | Magic rule | Exactly one: the lyrebird can replay any sound. Everything else is true. |
 | Ending | Every story ends with a **mission** — something to do, find, count or try at camp |
+
+### Who is speaking
+
+Tested on a five-year-old. She liked both pilots and could not follow either
+of them. The scripts were tagged dialogue with no attribution, so one voice
+performed four children and nothing marked the handovers.
+
+**Every line a child speaks is attributed, in the narrator's prose.**
+
+```
+"There's something there," whispered Rori.
+"Well, you scared it," said Billy.
+```
+
+Not `**RORI:**`. The tag is invisible in audio; "said Rori" is the only thing
+the listener actually receives. This is how audiobooks have always done it,
+and the reason is the same: a reader can see who is speaking, a listener
+cannot.
+
+Two consequences worth knowing:
+
+- **Echo keeps her own tag and her own voice.** She is the only character who
+  gets one. Sounding different is what tells a child she isn't another kid —
+  it is her attribution. She still gets introduced in prose the first time.
+- **Verse is single voice, always.** In a rhyming story the metre carries the
+  listener, and a voice change interrupts it. The narrator speaks every line,
+  including the refrains.
+
+It also made the audio better for a reason nobody planned. Story 12 went from
+35 clips to 7, and story 1 to a single clip. Fewer clips means fewer joins to
+smooth, and the model sees whole paragraphs at once instead of one line — so
+it can put the emphasis where the sentence needs it.
 
 ### Pacing — measured, not assumed
 
