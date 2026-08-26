@@ -1,0 +1,205 @@
+# The Ganguddy Stories — Story Engine v1
+
+A reusable spec for generating short audio stories for family trips.
+First destination: **Ganguddy (Dunns Swamp), Wollemi National Park, NSW.**
+
+---
+
+## 1. Format rules
+
+| Rule | Spec |
+|---|---|
+| Length | 600–1000 words (~5 min at 150 wpm) |
+| Target listener | Smart 5-year-old, with a 2-year-old in the car |
+| Speaker tags | Always. `NARRATOR:` `LYREBIRD:` `RORI:` `BILLY:` `SKYE:` `ADI:` |
+| Stage directions | Round brackets only — `(whispering)`, `(a pause)`. Never italics; the generator strips brackets but italics are ambiguous against emphasis. |
+| Fact budget | ~90 words max per story, in no more than 2 chunks, never in the final 60 seconds |
+| Fact trigger | **No fact enters a story without a physical object the kids find.** No lecturing. |
+| Stretch vocabulary | 2–3 new words per story, each used 3 times in context |
+| Magic rule | Exactly one: the lyrebird can replay any sound. Everything else is true. |
+| Ending | Every story ends with a **mission** — something to do, find, count or try at camp |
+
+### Story skeleton
+
+1. **Hook** (50 words) — in motion by the second sentence
+2. **Want** — one of the kids wants something small and concrete
+3. **Artefact** — they find a thing: a mark, a rust, a scribble, a track
+4. **Lyrebird** — appears *only if they've gone still*; plays back what the thing sounds like
+5. **Turn** — something goes wrong, or the thing is not what they thought
+6. **Resolve** — the key kid's competence solves it
+7. **Mission** — lyrebird sets the challenge, 30 seconds, then out
+
+### The feelings layer (light touch)
+
+Never the point of a story. Always underneath it. Rules:
+
+- **Body first, label second.** "Her chest was going fast and her hands wanted to do something" beats "she felt anxious." Kids locate feelings in their bodies before they can name them.
+- **One precise feeling word per story, folded into the stretch-vocabulary budget.** Not "sad" or "cross" — *frustrated, disappointed, nervous, relieved, proud, embarrassed, impatient, jealous*. Same rule: used three times.
+- **Regulation is disguised as bushcraft.** Going still to see an animal, breathing out slowly so you don't scare a fish, counting to three before cold water. Echo never says "calm down" — she says "be still, or she won't come." Same skill, no therapy voice.
+- **Not every feeling resolves.** Roughly one story in six should end with someone still a bit disappointed. Nobody learns a lesson out loud.
+- **Ratio target across 50:** a feeling is *noticed* in about half, *named* in about a third, and *talked about* in maybe four.
+- **Banned:** "big feelings", "use your words", "let's take a deep breath together", any adult explaining an emotion to a child.
+
+---
+
+## 2. Character bible
+
+### Rori — 5 — the brave one
+- **Competence:** courage. First into the cold water, the dark, the narrow gap.
+- **Also:** she *notices*. She sees the thing.
+- **Flaw:** she moves too fast when she sees it, and it slips away.
+- **Series arc:** learning to go still. This is the spine of the whole collection.
+- **Catchphrase shape:** "I saw it. I *saw* it."
+
+### Billy — 5 — the other brave one
+- Matched pair with Rori, deliberately. Same age, same nerve.
+- **Differentiated by kind of bravery:** Rori's is physical (heights, cold, dark). Billy's is social and verbal — he asks the question, talks to the stranger, makes the plan out loud.
+- **Competence:** preparation. He brought the thing nobody thought they'd need.
+- **Flaw:** wants to be first at everything, including being right.
+- **Dynamic:** competitive with Rori, loyal underneath. Their races and dares drive plots.
+- *Placeholder traits — tighten once you know him better.*
+
+### Skye — 4 — the quiet one
+- **Competence:** observation. She sees it first and says nothing.
+- **Flaw:** doesn't speak up until it's nearly too late.
+- **Series arc:** her voice gets louder. By the late stories she's the one who stops the others.
+- She and the lyrebird understand each other — both quiet, both watchful.
+
+### Adi — 2 — the namer
+- **Competence:** she points and names the animal. Correctly. Every time.
+- Vocabulary of maybe eight words, deployed devastatingly.
+- The comic engine and, roughly one story in five, the accidental key.
+- Anchor of all refrain stories.
+
+### The Lyrebird — the guide
+**Name: Echo.**
+
+Note: Echo is a *character*, not the narrator. NARRATOR carries stories 1–11 and sets those missions. The kids don't meet Echo until story 12; from then on she sets the missions herself. This is what makes the two-voice split work later.
+
+- **What she is:** a superb lyrebird. Shy, ground-dwelling, weak flier, scratches in leaf litter.
+- **Her gift:** she replays sounds. Real lyrebirds learn mimicry from *other lyrebirds*, and repertoires pass down through generations with little change over decades — so she isn't remembering, she's carrying a sound handed down a chain of birds.
+- **Her rule:** she will not appear to noisy children. Stillness summons her. This is the patience-teaching mechanism, built into the format.
+- **Her voice:** never explains before she shows. Gets things slightly wrong so the kids can correct her. Answers questions with questions.
+- **What she won't do:** tell Dreaming stories. She says plainly that some stories belong to the people of this Country and aren't hers to tell — and that this is a good thing, not a sad one.
+
+---
+
+## 3. Story arcs
+
+1. Quest — go and find the thing
+2. Overcoming fear
+3. Small-one-saves-the-day
+4. Voyage and return
+5. Mystery — whose track, what made this mark
+6. Trickster
+7. Transformation — literal, for insects and frogs
+8. Unlikely friendship
+9. Time-slip — the lyrebird plays the past
+10. Survival — weather, cold, lost
+11. Race / competition
+12. Patience — nothing happens until they stop moving *(the house special)*
+13. How-it-works, told as adventure
+
+**Modes:** Prose (default) · Rhyming (anapaestic tetrameter, Donaldson-style) · Refrain (Adi-led, short, repeated line to shout)
+
+---
+
+## 4. Categories, with verified local hooks
+
+| Code | Category | Anchor facts |
+|---|---|---|
+| **A** | Trip prep & logistics | Packing, the list, drinking water isn't provided, bring your own firewood, no bins |
+| **B** | Water & the weir | Not a swamp. Kandos Weir, late 1920s/1930, built to supply the Kandos cement works. The Cudgegong River backed up behind it |
+| **C** | Animals | Platypus and long-necked turtles in the weir, greater gliders at night, wallabies, yabbies |
+| **D** | Birds | Purple swamphens, kookaburras, wedge-tailed eagles, the lyrebird herself |
+| **E** | Insects & small things | Scribbly gum moth caterpillars, dragonflies, ants, spider webs at dawn |
+| **F** | Plants | Scribbly gum woodland. Wollemi pine — known only from fossils until a ranger abseiled into a canyon in this park in 1994 |
+| **G** | Rock & geology | Triassic sandstone ~200 my. Hard ironstone bands weather slower than soft sandstone → the beehive steps. Vertical cracks split blocks; water rounds the tops |
+| **H** | Weather & sky | Frost, cold air sinking into the valley, fog on the water at dawn, dark-sky stars |
+| **I** | Aboriginal culture & Country | Ganguddy, Dabee People of the Wiradjuri Nation. 120+ Aboriginal sites in Wollemi. Red ochre hand stencils thought to be 7,000+ years old. Grinding grooves, scarred trees |
+| **J** | European history | Dunn brothers built a cottage and shearing shed there in 1877 — hence "Dunns Swamp". Sheep, wool, shearing |
+| **K** | Modern history & fire | Around 90% of the park burned in the 2019–20 Gospers Mountain fire. Firefighters were winched into a canyon with irrigation lines to save the last wild Wollemi pines. Regrowth since |
+| **M** | Camp craft | Setting up, fire, cooking, washing up, the long drop, torches, night sounds |
+| **L** | Activities & games | Swimming, kayaking, fishing, damper, marshmallows, skimming stones, cubbies, tree and pagoda climbing, mud dams, painting rocks and bark, ochre and charcoal drawing, night walks |
+
+---
+
+## 5. The 50-story matrix
+
+**Act I — Getting Ready (1–5)** · **Act II — The Drive (6–12)** · **Act III — At Camp (13–44)** · **Act IV — Going Home (45–50)**
+
+| # | Working title | Cat | Arc | Mode | Key kid | Artefact / trigger | Mission |
+|---|---|---|---|---|---|---|---|
+| 1 | The List | A | How-it-works | Rhyming | Billy | The packing list | Find one thing that's missing |
+| 2 | Too Much Stuff | A | Trickster | Prose | Rori | An overstuffed bag | Choose three things you'd take |
+| 3 | Water You Can't Drink | A | How-it-works | Prose | Billy | Empty water container | Count the water bottles |
+| 4 | The Wood You Can't Burn | A | Small-one-saves | Prose | Skye | A fallen log full of insects | Look under one log |
+| 5 | Adi Packs a Bag | A | — | Refrain | Adi | Everything she owns | Say what Adi packed |
+| 6 | Four Hours | A | Voyage & return | Rhyming | Rori | The odometer | Count the towns |
+| 7 | Where the Mountains Go Blue | G | How-it-works | Prose | Billy | Blue haze on the ranges | Spot when the blue starts |
+| 8 | The Last Shop | A | Quest | Prose | Billy | Kandos main street | Name the last shop you pass |
+| 9 | The Grey Powder Town | B | Time-slip | Prose | Rori | Cement works chimney | Find something made of concrete |
+| 10 | The Road That Isn't Sealed | A | Overcoming fear | Prose | Skye | Gravel noise under tyres | Listen for the change |
+| 11 | Adi Names Everything | D | — | Refrain | Adi | Roadside animals | Name three animals |
+| 12 | The Bird Who Was Waiting | D | Patience | Prose | Rori | First lyrebird sighting | Sit still for one minute |
+
+**Act II-a — Making Camp (C1–C8).** Slots between #12 and #13. Highest emotional density in the collection — setting up camp is where tired kids and tired parents collide, so this is where the feelings layer does most of its work.
+
+| # | Working title | Cat | Arc | Mode | Key kid | Artefact / trigger | Mission | Feeling |
+|---|---|---|---|---|---|---|---|---|
+| C1 | The Box That Turns Into a House | M | How-it-works | Prose | Billy | The camper trailer unfolding | Find the parts that fold | proud |
+| C2 | Poles, Pegs and Tangles | M | Overcoming fear | Prose | Rori | A tent pole that won't go | Put in one peg yourself | frustrated |
+| C3 | The Fire That Wouldn't Start | M | Patience | Prose | Rori | Smoke, no flame | Gather kindling, thinnest first | impatient |
+| C4 | Smoke in Your Eyes | M | — | Refrain | Adi | Bacon on the BBQ | Say what's for breakfast | happy |
+| C5 | The Long Drop | M | Overcoming fear | Prose | Skye | The pit toilet | Go once without help | nervous |
+| C6 | Torches | M | Overcoming fear | Prose | Billy | A beam in the dark | Turn your torch off for ten seconds | brave |
+| C7 | The Washing-Up Song | M | — | Rhyming | Adi | A stack of plates | Wash one thing | — |
+| C8 | What Was That Noise? | M | Mystery | Prose | Skye | An unexplained sound at night | Name three night sounds | scared → curious |
+
+| 13 | The Rock That Grew Steps | G | Mystery | Prose | Billy | Stepped orange pagoda | Count the layers |
+| 14 | Two Hundred Million Mornings | G | Time-slip | Prose | Skye | Ripple marks in sandstone | Find a pattern in the rock |
+| 15 | The Handwriting on the Tree | E | Mystery | Prose | Skye | Scribbles on gum bark | Find the longest scribble |
+| 16 | Who Ate This? | E | Mystery | Prose | Adi | Chewed seed pod | Find something that's been eaten |
+| 17 | The Slide in the Mud | C | Patience | Prose | Rori | Slide mark and bubbles | Watch the water at dusk |
+| 18 | The Animal That Broke the Rules | C | How-it-works | Prose | Billy | Platypus | Draw an animal made of parts |
+| 19 | Turtle Neck | C | Unlikely friendship | Rhyming | Skye | A long-necked turtle | Find a shell or a shape like one |
+| 20 | The Gliders Come Out | C | Overcoming fear | Prose | Rori | Torchlight eyeshine | Go out after dark |
+| 21 | Adi Sees a Wallaby | C | — | Refrain | Adi | A swamp wallaby | Freeze when you see one |
+| 22 | The Laughing Family | D | Trickster | Prose | Billy | Kookaburra at breakfast | Laugh back |
+| 23 | The Eagle's Ladder | D | Quest | Prose | Rori | A wedge-tail circling | Watch one bird for 2 minutes |
+| 24 | Six Legs and a Thousand Eyes | E | Transformation | Prose | Skye | Dragonfly on a reed | Find a shed skin |
+| 25 | The Web at Six O'Clock | E | Patience | Rhyming | Skye | Dew on a web | Look for webs at dawn |
+| 26 | The Tree That Came Back | K | Survival | Prose | Rori | Charred trunk, green shoots | Find green on black |
+| 27 | The Secret Trees | F | Quest | Prose | Billy | A cone or fossil leaf shape | Draw a tree nobody's seen |
+| 28 | The Night They Watered a Canyon | K | Small-one-saves | Prose | Billy | Smoke smell / burnt ridge | Ask what you'd save first |
+| 29 | The Rusted Thing | B | Time-slip | Prose | Rori | Rusted machinery | Find something old and made |
+| 30 | How to Turn Rock into Stone | B | How-it-works | Prose | Billy | A lump of concrete | Build a mud weir |
+| 31 | The Mud Dam | L | Race | Prose | Rori | Wet clay at the edge | Build a dam that holds |
+| 32 | The River That Stopped | B | Time-slip | Prose | Skye | Waterline on the rocks | Find the old shoreline |
+| 33 | The Wool on the Wire | J | Mystery | Prose | Skye | Wool caught on fence wire | Find something soft outdoors |
+| 34 | The Shearing Shed | J | Time-slip | Prose | Billy | Old post and rail | Count the fence posts |
+| 35 | Grooves in the Stone | I | Patience | Prose | Rori | Grinding grooves | Look, don't touch |
+| 36 | The Hands on the Wall | I | Patience | Prose | Skye | Ochre hand stencils | Trace your hand in the air |
+| 37 | Stories That Aren't Ours | I | — | Prose | Rori | The lyrebird refuses | Ask a question, wait for the answer |
+| 38 | Ochre, Charcoal, Water | L | How-it-works | Prose | Adi | Charcoal from the fire | Draw with charcoal |
+| 39 | The Stone That Skipped Eight | L | Race | Rhyming | Billy | A flat stone | Beat your own record |
+| 40 | Cold Water Courage | L | Overcoming fear | Prose | Rori | The first step in | Count to three, go in |
+| 41 | The Paddle and the Wind | L | Voyage & return | Prose | Billy | A kayak turning sideways | Paddle to a landmark |
+| 42 | Nothing Is Biting | L | Patience | Prose | Rori | A still float | Wait ten whole minutes |
+| 43 | Damper, Ash and Patience | L | How-it-works | Prose | Skye | Dough that isn't ready | Make damper |
+| 44 | The House of Sticks | L | Quest | Prose | Adi | A leaning branch | Build a cubby |
+| 45 | Frost on the Tent | H | Survival | Prose | Billy | Ice on the fly | Feel the cold air pooling |
+| 46 | The Fog That Sat on the Water | H | Patience | Rhyming | Skye | Dawn fog | Get up before the sun once |
+| 47 | The Stars Nobody Owns | H | — | Prose | Rori | Dark sky | Find one constellation |
+| 48 | Leave No Trace | A | How-it-works | Prose | Billy | The empty campsite | Find one piece of rubbish |
+| 49 | Adi Says Goodbye | C | — | Refrain | Adi | Everything, one last time | Say goodbye to three things |
+| 50 | What We Took Home | — | Voyage & return | Prose | Rori | An empty pocket | Tell one person one thing |
+
+---
+
+## 6. Open items
+
+- Confirm Billy's and Skye's ages
+- Confirm lyrebirds actually occur at Ganguddy (vs the wetter Wollemi gullies) — if not, keep her as a visitor from the gullies rather than a resident
+- Test one rhyming script in ElevenLabs before committing to the eight rhyming stories — TTS tends to flatten metre
+- Source the Common Ground Wiradjuri recordings to play alongside these

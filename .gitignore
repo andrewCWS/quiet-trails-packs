@@ -1,0 +1,8 @@
+.venv/
+.narrate-cache/
+.DS_Store
+__pycache__/
+*.pyc
+
+# API keys never live in the repo — they come from the environment.
+.env

@@ -1,0 +1,4 @@
+requests
+pydub
+mutagen
+audioop-lts ; python_version >= "3.13"   # pydub imports stdlib audioop, removed in 3.13
