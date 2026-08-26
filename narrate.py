@@ -69,6 +69,17 @@ PRONUNCIATION = {
     "Adi": "Addie",
 }
 
+# Where respelling isn't enough, say it in phonemes instead. Fish s2 takes CMU
+# Arpabet between <|phoneme_start|> and <|phoneme_end|>, stress digits included
+# (1 primary, 2 secondary, 0 unstressed). ElevenLabs uses an uploaded
+# pronunciation dictionary instead, and only on eleven_flash_v2 / eleven_v3, so
+# these words fall back to their ordinary spelling there.
+#
+#   kookaburra  /ˈkʊkəˌbaɹə/  KOOK-uh-burr-uh
+PHONEMES = {
+    "kookaburra": "K UH1 K AH0 B AH2 R AH0",
+}
+
 # Clips come back from the API with their own leading and trailing silence,
 # and it varies — measured across one story, 160-310 ms in front and 100-320
 # behind. Adding a fixed gap on top of that gives pauses that swing by a third
@@ -285,17 +296,22 @@ def synth_fish(text, reference_id, key, model=FISH_MODEL):
     return check(r, "Fish Audio").content
 
 
-def say_as(text):
-    """Apply PRONUNCIATION to the text being spoken, leaving scripts alone."""
+def say_as(text, provider="fish"):
+    """Respell the text being spoken, leaving the script itself alone."""
     for word, spoken in PRONUNCIATION.items():
         text = re.sub(rf"\b{re.escape(word)}\b", spoken, text)
+    if provider == "fish":
+        for word, arpabet in PHONEMES.items():
+            text = re.sub(rf"\b{re.escape(word)}\b",
+                          f"<|phoneme_start|>{arpabet}<|phoneme_end|>",
+                          text, flags=re.IGNORECASE)
     return text
 
 
 def synth(text, voice_id, provider, key, model=None):
     """Generate one clip, caching by hash so re-runs cost nothing."""
     CACHE_DIR.mkdir(exist_ok=True)
-    text = say_as(text)
+    text = say_as(text, provider)
     # Both model names go into the hash so that the default arguments produce
     # the same digest they always have — an override only invalidates the
     # provider it applies to, never the clips you have already paid for.
