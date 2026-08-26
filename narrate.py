@@ -66,7 +66,7 @@ STAGE_CUES = {
 # fixing one name here re-generates only the lines that contain it.
 # Australian voices are non-rhotic, so an "ar" is a useful way to spell "ah".
 PRONUNCIATION = {
-    "Adi": "Ah-dee",
+    "Adi": "Addie",
 }
 
 PAUSE_MS = 350          # silence inserted between speaker turns
@@ -76,7 +76,7 @@ CACHE_DIR = Path(".narrate-cache")
 # BASE_URL is where the audio folder ends up once published. For GitHub Pages
 # a project site lives at https://<user>.github.io/<repo>/
 BASE_URL = "https://andrewcws.github.io/quiet-trails-packs/audio"
-SHOW_TITLE = "Stories from the Road"
+SHOW_TITLE = "Quiet Trails"
 SHOW_DESCRIPTION = ("Short adventure stories about the places we go. "
                     "Made for the car.")
 SHOW_AUTHOR = "The Hicks family"
@@ -147,6 +147,7 @@ def parse(path):
     """Return [(story_title, [(speaker, text), ...]), ...]."""
     stories, blocks, title = [], [], None
     speaker, buffer = None, []
+    seen_unknown = set()
 
     def flush_block():
         nonlocal speaker, buffer
@@ -200,6 +201,11 @@ def parse(path):
                     buffer.append(rest)
             else:
                 flush_block()          # metadata line — ignore
+                if name.isupper() and name not in seen_unknown:
+                    seen_unknown.add(name)
+                    print(f"  warning: **{name}:** is not a speaker — "
+                          f"that line will not be narrated ({Path(path).name})",
+                          file=sys.stderr)
             continue
 
         if speaker:
@@ -244,24 +250,24 @@ def elevenlabs_quota(key):
         return None
 
 
-def synth_elevenlabs(text, voice_id, key):
+def synth_elevenlabs(text, voice_id, key, model=ELEVENLABS_MODEL):
     r = requests.post(
         f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
         headers={"xi-api-key": key, "Content-Type": "application/json"},
         params={"output_format": "mp3_44100_128"},
-        json={"text": text, "model_id": ELEVENLABS_MODEL},
+        json={"text": text, "model_id": model},
         timeout=180,
     )
     return check(r, "ElevenLabs").content
 
 
-def synth_fish(text, reference_id, key):
+def synth_fish(text, reference_id, key, model=FISH_MODEL):
     r = requests.post(
         "https://api.fish.audio/v1/tts",
         headers={
             "Authorization": f"Bearer {key}",
             "Content-Type": "application/json",
-            "model": FISH_MODEL,
+            "model": model,
         },
         json={"text": text, "reference_id": reference_id, "format": "mp3"},
         timeout=180,
@@ -276,19 +282,24 @@ def say_as(text):
     return text
 
 
-def synth(text, voice_id, provider, key):
+def synth(text, voice_id, provider, key, model=None):
     """Generate one clip, caching by hash so re-runs cost nothing."""
     CACHE_DIR.mkdir(exist_ok=True)
     text = say_as(text)
+    # Both model names go into the hash so that the default arguments produce
+    # the same digest they always have — an override only invalidates the
+    # provider it applies to, never the clips you have already paid for.
+    el = model if provider == "elevenlabs" and model else ELEVENLABS_MODEL
+    fi = model if provider == "fish" and model else FISH_MODEL
     stamp = hashlib.sha256(
-        f"{provider}|{voice_id}|{ELEVENLABS_MODEL}|{FISH_MODEL}|{text}".encode()
+        f"{provider}|{voice_id}|{el}|{fi}|{text}".encode()
     ).hexdigest()[:20]
     cached = CACHE_DIR / f"{stamp}.mp3"
     if cached.exists():
         return cached.read_bytes()
 
     audio = (synth_elevenlabs if provider == "elevenlabs" else synth_fish)(
-        text, voice_id, key
+        text, voice_id, key, model or (ELEVENLABS_MODEL if provider == "elevenlabs" else FISH_MODEL)
     )
     cached.write_bytes(audio)
     return audio
@@ -434,6 +445,8 @@ def main():
     ap.add_argument("--feed-only", action="store_true",
                     help="rebuild index.xml from existing mp3s, generate nothing")
     ap.add_argument("--base-url", help="overrides BASE_URL for the feed")
+    ap.add_argument("--model", help="override the provider's model for this run"
+                                    " (e.g. s2-pro, eleven_flash_v2_5)")
     args = ap.parse_args()
 
     if args.feed_only:
@@ -488,7 +501,7 @@ def main():
         for i, (spk, text) in enumerate(blocks, start=1):
             vid = voice_for(spk, args.provider, args.single_voice)
             print(f"    {i}/{len(blocks)} {spk} ({len(text)} chars)")
-            clips.append(synth(text, vid, args.provider, key))
+            clips.append(synth(text, vid, args.provider, key, args.model))
 
         path = out_dir / f"{num:02d}-{slugify(name)}.mp3"
         join(clips, path, album=SEASON_NAME, title=name, track=num)

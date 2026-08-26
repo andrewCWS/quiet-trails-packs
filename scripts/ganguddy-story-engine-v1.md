@@ -9,15 +9,33 @@ First destination: **Ganguddy (Dunns Swamp), Wollemi National Park, NSW.**
 
 | Rule | Spec |
 |---|---|
-| Length | 600–1000 words (~5 min at 150 wpm) |
+| Length | 900–1100 words (~5 min). See pacing note below. |
 | Target listener | Smart 5-year-old, with a 2-year-old in the car |
-| Speaker tags | Always. `NARRATOR:` `LYREBIRD:` `RORI:` `BILLY:` `SKYE:` `ADI:` |
+| Speaker tags | Always. `NARRATOR:` `ECHO:` `RORI:` `BILLY:` `SKYE:` `ADI:` `ALL:` — and nothing else. Any other `**ALLCAPS:**` tag is treated as metadata and silently dropped, so the generator now warns when it sees one. |
 | Stage directions | Round brackets only — `(whispering)`, `(a pause)`. Never italics; the generator strips brackets but italics are ambiguous against emphasis. |
 | Fact budget | ~90 words max per story, in no more than 2 chunks, never in the final 60 seconds |
 | Fact trigger | **No fact enters a story without a physical object the kids find.** No lecturing. |
 | Stretch vocabulary | 2–3 new words per story, each used 3 times in context |
 | Magic rule | Exactly one: the lyrebird can replay any sound. Everything else is true. |
 | Ending | Every story ends with a **mission** — something to do, find, count or try at camp |
+
+### Pacing — measured, not assumed
+
+The original 150 wpm estimate was wrong. Measured against the two pilots on
+Fish Audio `s1`:
+
+| | Words | Audio | Rate |
+|---|---|---|---|
+| Story 12, prose | 920 | 4:36 | **200 wpm** |
+| Story 1, verse | 594 | 3:16 | **182 wpm** |
+
+So a real five minutes is about **1000 words of prose** or **900 of verse** —
+verse reads slower because the line breaks land as pauses. Synthetic narration
+is simply faster than a human reading aloud, and the gap is large enough to
+matter: at the old target a "5-minute story" arrives at about 3:30.
+
+Re-measure if the provider or model changes. `--dry-run` estimates characters
+and cost, not duration; duration only becomes real once a clip exists.
 
 ### Story skeleton
 
