@@ -19,6 +19,7 @@ Set your key first:
 """
 
 import argparse
+import json
 import hashlib
 import os
 import re
@@ -209,6 +210,32 @@ def voice_for(speaker, provider, single_voice):
     return table.get(speaker, table["NARRATOR"])
 
 
+def check(r, provider):
+    """raise_for_status, but with the provider's reason attached.
+
+    Both APIs explain themselves in the response body — quota exhausted,
+    voice not available on this plan, key not activated. Without this you
+    just get a bare status code and have to guess.
+    """
+    if r.ok:
+        return r
+    try:
+        detail = json.dumps(r.json(), separators=(", ", ": "))
+    except ValueError:
+        detail = r.text[:400]
+    sys.exit(f"{provider} returned {r.status_code}: {detail}")
+
+
+def elevenlabs_quota(key):
+    """Characters left this period, or None if the endpoint won't say."""
+    try:
+        d = requests.get("https://api.elevenlabs.io/v1/user/subscription",
+                         headers={"xi-api-key": key}, timeout=30).json()
+        return d["tier"], d["character_limit"] - d["character_count"]
+    except Exception:
+        return None
+
+
 def synth_elevenlabs(text, voice_id, key):
     r = requests.post(
         f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
@@ -217,8 +244,7 @@ def synth_elevenlabs(text, voice_id, key):
         json={"text": text, "model_id": ELEVENLABS_MODEL},
         timeout=180,
     )
-    r.raise_for_status()
-    return r.content
+    return check(r, "ElevenLabs").content
 
 
 def synth_fish(text, reference_id, key):
@@ -232,8 +258,7 @@ def synth_fish(text, reference_id, key):
         json={"text": text, "reference_id": reference_id, "format": "mp3"},
         timeout=180,
     )
-    r.raise_for_status()
-    return r.content
+    return check(r, "Fish Audio").content
 
 
 def synth(text, voice_id, provider, key):
@@ -426,6 +451,16 @@ def main():
     )
     if not key:
         sys.exit("Set your API key as an environment variable first.")
+
+    needed = sum(len(t) for _, blocks in stories for _, t in blocks)
+    if args.provider == "elevenlabs":
+        quota = elevenlabs_quota(key)
+        if quota:
+            tier, left = quota
+            print(f"ElevenLabs: {tier} tier, {left:,} characters left, "
+                  f"{needed:,} needed")
+            if left < needed:
+                sys.exit("Not enough quota. Add credit, or use --provider fish.")
 
     out_dir = Path(args.out)
     out_dir.mkdir(exist_ok=True)
