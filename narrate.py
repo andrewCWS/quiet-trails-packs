@@ -50,7 +50,7 @@ FISH_VOICES = {
 }
 
 ELEVENLABS_MODEL = "eleven_multilingual_v2"   # or "eleven_flash_v2_5" — half price
-FISH_MODEL = "s1"                             # or "s2-pro"
+FISH_MODEL = "s2-pro"                         # "s1" is cheaper and flatter
 
 # Leading italic phrases that are performance directions, not dialogue.
 # Everything in (round brackets) is stripped unconditionally, so prefer that
@@ -69,7 +69,17 @@ PRONUNCIATION = {
     "Adi": "Addie",
 }
 
-PAUSE_MS = 350          # silence inserted between speaker turns
+# Clips come back from the API with their own leading and trailing silence,
+# and it varies — measured across one story, 160-310 ms in front and 100-320
+# behind. Adding a fixed gap on top of that gives pauses that swing by a third
+# of a second, which is what a sharp or draggy cut actually is. So each clip is
+# trimmed to its own speech, levelled, and the pause is put back deliberately.
+TRIM_DB = -45           # anything quieter than this counts as silence
+KEEP_MS = 25            # breath left either side of the speech, so onsets live
+LEVEL_DBFS = -16.0      # every clip lands here — no line jumps out at you
+FADE_MS = 12            # kills the click at each edit point
+PAUSE_SAME = 200        # beat between two turns by the same speaker
+PAUSE_TURN = 420        # beat when the speaker changes
 CACHE_DIR = Path(".narrate-cache")
 
 # ---- podcast feed -------------------------------------------------------
@@ -306,24 +316,46 @@ def synth(text, voice_id, provider, key, model=None):
 
 # ---------------------------------------------------------------- joining
 
-def join(clips, out_path, album=None, title=None, track=None):
-    """Join MP3 clips. Uses pydub for clean joins with pauses if available,
-    otherwise concatenates the bytes, which plays fine in every player I know
-    of but gives you no control over gaps."""
+def dress(seg):
+    """Trim a clip to its own speech, level it, and fade its edges."""
+    from pydub.silence import detect_leading_silence
+
+    lead = detect_leading_silence(seg, silence_threshold=TRIM_DB)
+    tail = detect_leading_silence(seg.reverse(), silence_threshold=TRIM_DB)
+    if lead + tail < len(seg):                      # not silence all the way
+        seg = seg[max(0, lead - KEEP_MS):len(seg) - max(0, tail - KEEP_MS)]
+    if seg.dBFS != float("-inf"):
+        seg = seg.apply_gain(LEVEL_DBFS - seg.dBFS)
+    return seg.fade_in(FADE_MS).fade_out(FADE_MS)
+
+
+def join(clips, out_path, speakers=None, album=None, title=None, track=None):
+    """Join MP3 clips into one story, with pauses that follow the dialogue.
+
+    Falls back to raw byte concatenation if pydub is unavailable — that plays
+    in every player I know of, but the gaps and levels are whatever the API
+    happened to return, so it says so rather than failing quietly.
+    """
     try:
         from pydub import AudioSegment
         import io
-
-        combined = AudioSegment.empty()
-        gap = AudioSegment.silent(duration=PAUSE_MS)
-        for i, clip in enumerate(clips):
-            if i:
-                combined += gap
-            combined += AudioSegment.from_file(io.BytesIO(clip), format="mp3")
-        combined.export(out_path, format="mp3", bitrate="128k")
-    except Exception:
+    except ImportError as e:
+        print(f"    warning: {e} — joining without pauses or levelling",
+              file=sys.stderr)
         out_path.write_bytes(b"".join(clips))
+        tag(out_path, album, title, track)
+        return
 
+    speakers = speakers or [None] * len(clips)
+    combined = AudioSegment.empty()
+    for i, clip in enumerate(clips):
+        if i:
+            same = speakers[i] == speakers[i - 1]
+            combined += AudioSegment.silent(
+                duration=PAUSE_SAME if same else PAUSE_TURN)
+        combined += dress(AudioSegment.from_file(io.BytesIO(clip), format="mp3"))
+
+    combined.export(out_path, format="mp3", bitrate="128k")
     tag(out_path, album, title, track)
 
 
@@ -504,7 +536,8 @@ def main():
             clips.append(synth(text, vid, args.provider, key, args.model))
 
         path = out_dir / f"{num:02d}-{slugify(name)}.mp3"
-        join(clips, path, album=SEASON_NAME, title=name, track=num)
+        join(clips, path, speakers=[spk for spk, _ in blocks],
+             album=SEASON_NAME, title=name, track=num)
         print(f"    -> {path}")
 
     feed = write_feed(out_dir, args.base_url)
