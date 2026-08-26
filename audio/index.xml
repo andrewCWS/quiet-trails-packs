@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Stories from the Road</title>
+    <link>https://andrewcws.github.io/quiet-trails-packs/audio/</link>
+    <description>Short adventure stories about the places we go. Made for the car.</description>
+    <language>en-au</language>
+    <itunes:author>The Hicks family</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://andrewcws.github.io/quiet-trails-packs/audio/cover.jpg"/>
+    <itunes:category text="Kids &amp; Family"/>
+    <itunes:block>Yes</itunes:block>
+    <item>
+      <title>The List</title>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:duration>3:16</itunes:duration>
+      <guid isPermaLink="false">https://andrewcws.github.io/quiet-trails-packs/audio/01-the-list.mp3</guid>
+      <pubDate>Mon, 24 Aug 2026 02:09:54 GMT</pubDate>
+      <enclosure url="https://andrewcws.github.io/quiet-trails-packs/audio/01-the-list.mp3" length="3152390" type="audio/mpeg"/>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The Bird Who Was Waiting</title>
+      <itunes:episode>12</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:duration>4:36</itunes:duration>
+      <guid isPermaLink="false">https://andrewcws.github.io/quiet-trails-packs/audio/12-the-bird-who-was-waiting.mp3</guid>
+      <pubDate>Tue, 25 Aug 2026 02:09:54 GMT</pubDate>
+      <enclosure url="https://andrewcws.github.io/quiet-trails-packs/audio/12-the-bird-who-was-waiting.mp3" length="4437662" type="audio/mpeg"/>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>

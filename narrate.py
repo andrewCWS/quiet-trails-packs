@@ -61,6 +61,14 @@ STAGE_CUES = {
     "under his breath", "to herself", "to himself", "calling", "muttering",
 }
 
+# Words the model says wrong, respelled for the ear only. The scripts keep
+# the real spelling — this is applied to the text on its way to the API, so
+# fixing one name here re-generates only the lines that contain it.
+# Australian voices are non-rhotic, so an "ar" is a useful way to spell "ah".
+PRONUNCIATION = {
+    "Adi": "Ah-dee",
+}
+
 PAUSE_MS = 350          # silence inserted between speaker turns
 CACHE_DIR = Path(".narrate-cache")
 
@@ -261,9 +269,17 @@ def synth_fish(text, reference_id, key):
     return check(r, "Fish Audio").content
 
 
+def say_as(text):
+    """Apply PRONUNCIATION to the text being spoken, leaving scripts alone."""
+    for word, spoken in PRONUNCIATION.items():
+        text = re.sub(rf"\b{re.escape(word)}\b", spoken, text)
+    return text
+
+
 def synth(text, voice_id, provider, key):
     """Generate one clip, caching by hash so re-runs cost nothing."""
     CACHE_DIR.mkdir(exist_ok=True)
+    text = say_as(text)
     stamp = hashlib.sha256(
         f"{provider}|{voice_id}|{ELEVENLABS_MODEL}|{FISH_MODEL}|{text}".encode()
     ).hexdigest()[:20]
