@@ -56,7 +56,7 @@ children feel got at were they old enough to notice, cut it. Not soften — cut.
 | Fact trigger | **No fact enters a story without a physical object the kids find.** No lecturing. |
 | Stretch vocabulary | 2–3 new words per story, each used 3 times in context |
 | Magic rule | Exactly one: the lyrebird can replay any sound. Everything else is true. |
-| Ending | Every story ends with a **mission**, and the word "mission" is said out loud. Never "here's your first one" — a listener has no idea what "one" refers to, and stories are standalone, so there is no first. "Here's a mission for tonight." Not *task* or *job*; both sound like chores. |
+| Ending | Every story ends with a **mission**, and the word "mission" is said out loud. Never "here's your first one" — a listener has no idea what "one" refers to, and stories are standalone, so there is no first. "Here's a mission for tonight." Not *task* or *job*; both sound like chores. A mission doesn't have to be doable from a car seat: some are for right now out the window, most are for later at camp, and it's the parents who bring them back up. Write it so it survives being remembered four hours later. |
 
 ### Who is speaking
 
