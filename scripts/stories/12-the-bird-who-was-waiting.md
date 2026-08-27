@@ -79,7 +79,7 @@ A tick-tick-tick from somewhere in a branch. Water slapping softly on rock. Wind
 
 That's what being **patient** actually is. Not waiting for nothing. Waiting until you notice there was never nothing.
 
-Then a kookaburra laughed. Right there, close.
+Then a kookaburra laughed. (sfx: kookaburra) Right there, close.
 
 Adi's head came up. "Bird," said Adi.
 
@@ -87,7 +87,7 @@ Except there was no kookaburra. Skye was looking in exactly the right place, and
 
 There was a brown bird with an untidy tail, standing very still in the leaves, looking straight back at her.
 
-And then it made the sound of a whipbird. And then a magpie. And then, unmistakably, the sound of a car door slamming.
+And then it made the sound of a whipbird. (sfx: whipbird) And then a magpie. (sfx: magpie) And then, unmistakably, the sound of a car door slamming. (sfx: car-door)
 
 "That's, that's not *fair,*" said Billy.
 

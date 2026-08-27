@@ -45,12 +45,16 @@ ELEVENLABS_VOICES = {
     "ECHO": "ssxGjYJjpi2zZlztJhZU",
 }
 FISH_VOICES = {
-    "NARRATOR": "1f3f0e3b021d4acbb93ea239e69d65e3",
+    "NARRATOR": "aa11a7d54bfd443cab3a8131b956a1bb",
     "ECHO": "04561fb2a7ca4e5b8e6be3885606cda7",
 }
 
 ELEVENLABS_MODEL = "eleven_multilingual_v2"   # or "eleven_flash_v2_5" — half price
 FISH_MODEL = "s2-pro"                         # "s1" is cheaper and flatter
+
+# Fish takes a speaking-rate multiplier (0.5-2.0). Slightly under 1 reads as
+# calmer without sounding slowed down, and calm is the whole brief.
+SPEED = 0.93
 
 # Leading italic phrases that are performance directions, not dialogue.
 # Everything in (round brackets) is stripped unconditionally, so prefer that
@@ -98,8 +102,17 @@ TRIM_DB = -45           # anything quieter than this counts as silence
 KEEP_MS = 25            # breath left either side of the speech, so onsets live
 LEVEL_DBFS = -16.0      # every clip lands here — no line jumps out at you
 FADE_MS = 12            # kills the click at each edit point
-PAUSE_SAME = 200        # beat between two turns by the same speaker
-PAUSE_TURN = 420        # beat when the speaker changes
+PAUSE_SAME = 260        # beat between two turns by the same speaker
+PAUSE_TURN = 500        # beat when the speaker changes
+PAUSE_SFX = 320         # air either side of a sound effect
+SFX_DBFS = -19.0        # effects sit under the narration, never startle
+
+# Every story opens and closes on Echo's own call. Same two files across all
+# fifty, so a child learns the boundary in one listen. Set to None to drop.
+OPEN_STING = "lyrebird-call"
+CLOSE_STING = "lyrebird-call"
+SFX_DIR = Path("sfx")
+SFX_MARK = "\x00"      # separates an sfx key from speech inside a block
 CACHE_DIR = Path(".narrate-cache")
 
 # ---- podcast feed -------------------------------------------------------
@@ -122,6 +135,9 @@ HEADING = re.compile(r"^(#{1,3})\s+(.*)$")
 
 def clean_line(text):
     """Strip markdown emphasis, bracketed directions, and leading stage cues."""
+    text = re.sub(r"\(\s*sfx\s*:\s*([a-z0-9-]+)\s*\)",      # (sfx: kookaburra)
+                  lambda m: SFX_MARK + m.group(1).lower() + SFX_MARK,
+                  text, flags=re.IGNORECASE)
     text = re.sub(r"\([^)]*\)", "", text)          # (whispering)
     text = re.sub(                                 # [whispering], [whisper]
         r"\[([^\]]*)\]",
@@ -250,6 +266,26 @@ def parse(path):
 
 # ---------------------------------------------------------------- tts
 
+def sfx_path(key):
+    """First file in sfx/ named after this key, at any depth."""
+    for ext in ("mp3", "wav", "m4a", "ogg", "flac"):
+        hit = next(SFX_DIR.rglob(f"{key}.{ext}"), None)
+        if hit:
+            return hit
+    return None
+
+
+def split_sfx(text):
+    """Split a block into ("speech", text) and ("sfx", key) pieces."""
+    pieces = []
+    for i, part in enumerate(text.split(SFX_MARK)):
+        part = part.strip()
+        if not part:
+            continue
+        pieces.append(("sfx", part) if i % 2 else ("speech", part))
+    return pieces
+
+
 def voice_for(speaker, provider, single_voice):
     table = ELEVENLABS_VOICES if provider == "elevenlabs" else FISH_VOICES
     if single_voice:
@@ -294,7 +330,7 @@ def synth_elevenlabs(text, voice_id, key, model=ELEVENLABS_MODEL):
     return check(r, "ElevenLabs").content
 
 
-def synth_fish(text, reference_id, key, model=FISH_MODEL):
+def synth_fish(text, reference_id, key, model=FISH_MODEL, speed=SPEED):
     r = requests.post(
         "https://api.fish.audio/v1/tts",
         headers={
@@ -302,7 +338,8 @@ def synth_fish(text, reference_id, key, model=FISH_MODEL):
             "Content-Type": "application/json",
             "model": model,
         },
-        json={"text": text, "reference_id": reference_id, "format": "mp3"},
+        json={"text": text, "reference_id": reference_id, "format": "mp3",
+              "prosody": {"speed": speed}},
         timeout=180,
     )
     return check(r, "Fish Audio").content
@@ -323,7 +360,7 @@ def say_as(text, provider="fish"):
     return text
 
 
-def synth(text, voice_id, provider, key, model=None):
+def synth(text, voice_id, provider, key, model=None, speed=None):
     """Generate one clip, caching by hash so re-runs cost nothing."""
     CACHE_DIR.mkdir(exist_ok=True)
     text = say_as(text, provider)
@@ -332,23 +369,26 @@ def synth(text, voice_id, provider, key, model=None):
     # provider it applies to, never the clips you have already paid for.
     el = model if provider == "elevenlabs" and model else ELEVENLABS_MODEL
     fi = model if provider == "fish" and model else FISH_MODEL
+    rate = speed if speed is not None else SPEED
     stamp = hashlib.sha256(
-        f"{provider}|{voice_id}|{el}|{fi}|{text}".encode()
+        f"{provider}|{voice_id}|{el}|{fi}|{rate}|{text}".encode()
     ).hexdigest()[:20]
     cached = CACHE_DIR / f"{stamp}.mp3"
     if cached.exists():
         return cached.read_bytes()
 
-    audio = (synth_elevenlabs if provider == "elevenlabs" else synth_fish)(
-        text, voice_id, key, model or (ELEVENLABS_MODEL if provider == "elevenlabs" else FISH_MODEL)
-    )
+    resolved = model or (ELEVENLABS_MODEL if provider == "elevenlabs" else FISH_MODEL)
+    if provider == "fish":
+        audio = synth_fish(text, voice_id, key, resolved, rate)
+    else:
+        audio = synth_elevenlabs(text, voice_id, key, resolved)
     cached.write_bytes(audio)
     return audio
 
 # ---------------------------------------------------------------- joining
 
-def dress(seg):
-    """Trim a clip to its own speech, level it, and fade its edges."""
+def dress(seg, level=LEVEL_DBFS):
+    """Trim a clip to its own sound, level it, and fade its edges."""
     from pydub.silence import detect_leading_silence
 
     lead = detect_leading_silence(seg, silence_threshold=TRIM_DB)
@@ -356,12 +396,17 @@ def dress(seg):
     if lead + tail < len(seg):                      # not silence all the way
         seg = seg[max(0, lead - KEEP_MS):len(seg) - max(0, tail - KEEP_MS)]
     if seg.dBFS != float("-inf"):
-        seg = seg.apply_gain(LEVEL_DBFS - seg.dBFS)
+        seg = seg.apply_gain(level - seg.dBFS)
     return seg.fade_in(FADE_MS).fade_out(FADE_MS)
 
 
-def join(clips, out_path, speakers=None, album=None, title=None, track=None):
-    """Join MP3 clips into one story, with pauses that follow the dialogue.
+def join(items, out_path, album=None, title=None, track=None):
+    """Join a story's pieces into one file.
+
+    `items` is a list of (kind, speaker, payload): kind is "speech" with MP3
+    bytes, or "sfx" with a Path. Pauses follow the dialogue — shorter between
+    two turns by the same speaker, longer when it changes, and a little air
+    either side of an effect.
 
     Falls back to raw byte concatenation if pydub is unavailable — that plays
     in every player I know of, but the gaps and levels are whatever the API
@@ -373,18 +418,28 @@ def join(clips, out_path, speakers=None, album=None, title=None, track=None):
     except ImportError as e:
         print(f"    warning: {e} — joining without pauses or levelling",
               file=sys.stderr)
-        out_path.write_bytes(b"".join(clips))
+        out_path.write_bytes(b"".join(d for k, _, d in items if k == "speech"))
         tag(out_path, album, title, track)
         return
 
-    speakers = speakers or [None] * len(clips)
     combined = AudioSegment.empty()
-    for i, clip in enumerate(clips):
-        if i:
-            same = speakers[i] == speakers[i - 1]
-            combined += AudioSegment.silent(
-                duration=PAUSE_SAME if same else PAUSE_TURN)
-        combined += dress(AudioSegment.from_file(io.BytesIO(clip), format="mp3"))
+    previous = None
+    for kind, speaker, payload in items:
+        if previous is not None:
+            if kind == "sfx" or previous[0] == "sfx":
+                gap = PAUSE_SFX
+            elif speaker == previous[1]:
+                gap = PAUSE_SAME
+            else:
+                gap = PAUSE_TURN
+            combined += AudioSegment.silent(duration=gap)
+
+        if kind == "sfx":
+            combined += dress(AudioSegment.from_file(payload), level=SFX_DBFS)
+        else:
+            combined += dress(AudioSegment.from_file(io.BytesIO(payload),
+                                                     format="mp3"))
+        previous = (kind, speaker)
 
     combined.export(out_path, format="mp3", bitrate="128k")
     tag(out_path, album, title, track)
@@ -508,6 +563,8 @@ def main():
     ap.add_argument("--feed-only", action="store_true",
                     help="rebuild index.xml from existing mp3s, generate nothing")
     ap.add_argument("--base-url", help="overrides BASE_URL for the feed")
+    ap.add_argument("--speed", type=float,
+                    help=f"speaking rate multiplier, 0.5-2.0 (default {SPEED})")
     ap.add_argument("--model", help="override the provider's model for this run"
                                     " (e.g. s2-pro, eleven_flash_v2_5)")
     args = ap.parse_args()
@@ -524,7 +581,8 @@ def main():
     if args.dry_run:
         grand = 0
         for title, blocks in stories:
-            chars = sum(len(t) for _, t in blocks)
+            chars = sum(len(p) for _, t in blocks
+                        for k, p in split_sfx(t) if k == "speech")
             grand += chars
             speakers = sorted({s for s, _ in blocks})
             print(f"\n{title}")
@@ -560,15 +618,34 @@ def main():
     for n, (title, blocks) in enumerate(stories, start=1):
         num, name = story_number(title, n), display_title(title)
         print(f"[{n}/{len(stories)}] {title}")
-        clips = []
+        items = []
+
+        def add_sfx(key_name):
+            found = sfx_path(key_name)
+            if found:
+                items.append(("sfx", None, found))
+            else:
+                print(f"    warning: no sound file named {key_name} in {SFX_DIR}/",
+                      file=sys.stderr)
+
+        if OPEN_STING:
+            add_sfx(OPEN_STING)
         for i, (spk, text) in enumerate(blocks, start=1):
             vid = voice_for(spk, args.provider, args.single_voice)
-            print(f"    {i}/{len(blocks)} {spk} ({len(text)} chars)")
-            clips.append(synth(text, vid, args.provider, key, args.model))
+            for kind, payload in split_sfx(text):
+                if kind == "sfx":
+                    print(f"    {i}/{len(blocks)} sfx: {payload}")
+                    add_sfx(payload)
+                else:
+                    print(f"    {i}/{len(blocks)} {spk} ({len(payload)} chars)")
+                    items.append(("speech", spk,
+                                  synth(payload, vid, args.provider, key,
+                                        args.model, args.speed)))
+        if CLOSE_STING:
+            add_sfx(CLOSE_STING)
 
         path = out_dir / f"{num:02d}-{slugify(name)}.mp3"
-        join(clips, path, speakers=[spk for spk, _ in blocks],
-             album=SEASON_NAME, title=name, track=num)
+        join(items, path, album=SEASON_NAME, title=name, track=num)
         print(f"    -> {path}")
 
     feed = write_feed(out_dir, args.base_url)
