@@ -81,19 +81,32 @@ and cost, not duration; duration only becomes real once a clip exists.
 
 ### The feelings layer (light touch)
 
-Never the point of a story. Always underneath it. Rules:
+Never the point of a story. Always underneath it.
+
+**These are guidelines, not rules.** They exist to stop the stories becoming
+therapy; followed too literally they will make fifty stories feel like one
+story told fifty times. If a story needs to break one, break it. The balance is
+the job.
 
 - **Body first, label second.** "Her chest was going fast and her hands wanted to do something" beats "she felt anxious." Kids locate feelings in their bodies before they can name them.
-- **One precise feeling word per story, named exactly once.** Not "sad" or "cross" — *frustrated, disappointed, nervous, relieved, proud, embarrassed, impatient, jealous*. This is the one place the three-times rule does **not** apply. Tested on the family: a stretch word repeated three times teaches; a feeling word repeated three times nags. Name it once, in the body-first sentence, then trust it and move on.
-- **Don't underline the failing either.** The mistake happens, someone says the unkind true thing, and the story keeps going. No narrator explaining what the child should have done. The feeling was the consequence — that's enough.
+- **One precise feeling word per story. Usually once is enough.** Not "sad" or "cross" — *frustrated, disappointed, nervous, relieved, proud, embarrassed, impatient, jealous*. The three-times rule for stretch vocabulary does **not** carry over here: a stretch word repeated three times teaches, a feeling word repeated three times nags. Twice is fine when the second one earns its place.
+- **The little arc is allowed to be visible.** The feeling arrives in the body, it gets named, something the child tries doesn't work, something else does. That sequence is the valuable part and shouldn't be hidden — but it rarely needs all four beats, and two is often plenty. What turns it into a lecture isn't the arc, it's the narrator stopping the story to point at the arc. Show the thing that worked; don't explain that it worked.
+- **Nothing is anyone's fault.** The mistake happens, another kid says the unkind true thing, and the story moves on. No narrator explaining what the child should have done instead.
 - **Regulation is disguised as bushcraft.** Going still to see an animal, breathing out slowly so you don't scare a fish, counting to three before cold water. Echo never says "calm down" — she says "be still, or she won't come." Same skill, no therapy voice.
 - **Not every feeling resolves.** Roughly one story in six should end with someone still a bit disappointed. Nobody learns a lesson out loud.
 - **Ratio target across 50:** a feeling is *noticed* in about half, *named* in about a third, and *talked about* in maybe four.
-- **Banned:** "big feelings", "use your words", "let's take a deep breath together", any adult explaining an emotion to a child.
+- **Banned:** "big feelings", "use your words", "let's take a deep breath together", any adult explaining an emotion to a child, and any sentence that would work unchanged as a caption on a parenting infographic.
 
 ---
 
 ## 2. Character bible
+
+**On the word "flaw".** These are real children and their parents are in the
+car. Nobody should hear their kid's shortcoming announced and repeated fifty
+times. So: tendencies, not flaws. A tendency is **shown by what the child does
+and never named by the narrator**, it is what makes the plot happen rather than
+a lesson attached to the plot, and no child carries the same one in every
+story. Some stories a child is simply competent and it is somebody else's turn.
 
 ### Rori — 5 — the brave one
 *Aurora. Traits from her parents: energetic, curious, funny, brave, protective
@@ -105,7 +118,7 @@ of her sister.*
   first partly so her little sister doesn't have to. Use this rather than
   making her merely fearless.
 - Funny on purpose, not by accident. She knows when she's being funny.
-- **Flaw:** she moves too fast when she sees it, and it slips away.
+- **Tendency:** she moves too fast when she sees it, and it slips away.
 - **Series arc:** learning to go still. This is the spine of the whole collection.
 - **Catchphrase shape:** "I saw it. I *saw* it."
 
@@ -113,7 +126,7 @@ of her sister.*
 - Matched pair with Rori, deliberately. Same age, same nerve.
 - **Differentiated by kind of bravery:** Rori's is physical (heights, cold, dark). Billy's is social and verbal — he asks the question, talks to the stranger, makes the plan out loud.
 - **Competence:** preparation. He brought the thing nobody thought they'd need.
-- **Flaw:** wants to be first at everything, including being right.
+- **Tendency:** wants to be first at everything, including being right.
 - **Dynamic:** competitive with Rori, loyal underneath. Their races and dares drive plots.
 - **Traits from his parents:** curious, strong, thoughtful, silly and kind.
   The silly matters and was missing — he is not only the careful one. He plans
@@ -126,10 +139,10 @@ of her sister.*
 
 - **Competence:** observation. She sees it first — and now she's likely to say
   so, loudly, about everything except the thing that matters.
-- **Flaw, revised:** not silence. She talks constantly, so the one true
-  observation gets lost in the stream and nobody registers it until later.
-  Same dramatic effect as the old "quiet one", it matches the real child, and
-  it is funnier.
+- **Tendency:** she has a lot to say, so the one thing that turns out to
+  matter arrives in the middle of a great deal else and nobody catches it
+  until later. Played as comedy and as competence — she *did* tell them — never
+  as a fault.
 - **Stubborn:** once she has decided a thing is so, it is so. Sometimes she's right.
 - **Series arc:** her voice gets louder. By the late stories she's the one who stops the others.
 - She and the lyrebird understand each other — both quiet, both watchful.

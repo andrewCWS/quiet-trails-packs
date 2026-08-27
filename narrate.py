@@ -80,6 +80,15 @@ PHONEMES = {
     "kookaburra": "K UH1 K AH0 B AH2 R AH0",
 }
 
+# Delivery tags the model actually acts on, written inline in scripts as
+# [whisper]. Tested against Fish s2-pro on the same sentence: [whisper] was the
+# only one anybody could hear. [excited], [gentle], [soft], [sad] and [warm]
+# shifted the reading slightly or not at all, and the round-bracket
+# paralanguage — (break), (breath) — did nothing whatsoever. (laugh) does
+# produce a laugh, but a sarcastic one, which is no use in a story for a
+# five-year-old. Add to this set only after hearing it work.
+DELIVERY_TAGS = {"whisper"}
+
 # Clips come back from the API with their own leading and trailing silence,
 # and it varies — measured across one story, 160-310 ms in front and 100-320
 # behind. Adding a fixed gap on top of that gives pauses that swing by a third
@@ -114,7 +123,10 @@ HEADING = re.compile(r"^(#{1,3})\s+(.*)$")
 def clean_line(text):
     """Strip markdown emphasis, bracketed directions, and leading stage cues."""
     text = re.sub(r"\([^)]*\)", "", text)          # (whispering)
-    text = re.sub(r"\[[^\]]*\]", "", text)         # [whispering]
+    text = re.sub(                                 # [whispering], [whisper]
+        r"\[([^\]]*)\]",
+        lambda m: m.group(0) if m.group(1).strip().lower() in DELIVERY_TAGS else "",
+        text)
 
     # A leading *italic phrase.* that matches a known cue is a direction.
     m = re.match(r"^\s*\*([^*]{1,40}?)\*\s*(.*)$", text)
@@ -300,6 +312,9 @@ def say_as(text, provider="fish"):
     """Respell the text being spoken, leaving the script itself alone."""
     for word, spoken in PRONUNCIATION.items():
         text = re.sub(rf"\b{re.escape(word)}\b", spoken, text)
+    if provider != "fish":
+        # Only Fish acts on these; anywhere else they would be read out loud.
+        text = re.sub(r"\[[^\]]*\]\s*", "", text)
     if provider == "fish":
         for word, arpabet in PHONEMES.items():
             text = re.sub(rf"\b{re.escape(word)}\b",
