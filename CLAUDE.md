@@ -153,12 +153,23 @@ eventually.
 
 ---
 
-## How many stories
+## The pack as it stands
 
-Target is roughly **2 hours of audio** — 45 minutes out, 45 at camp, 45 back.
-At ~5:30 each that's about **22 stories**, not 50. The matrix runs to 50 and
-should stay there as the long-term shape, but the trip pack is the first 22 or
-so, and Acts I–II (stories 1–12) are the ones that earn their place in a car.
+**37 stories, 2:51:08, all rendered and live.** Numbered 1–37 in *listening*
+order, which is not the matrix order — each script records its matrix number in
+its header.
+
+| Block | Episodes | Count |
+|---|---|---|
+| The drive out | 1–12 | 12 |
+| Making camp | 13–17 | 5 |
+| At camp | 18–32 | 15 |
+| Going home | 33–37 | 5 |
+
+Camp is 20 of 37, which restores the matrix's own weighting — an earlier 25-story
+cut was 17 travel to 8 camp and felt badly skewed in exactly the way you'd
+expect. **Going Home is parked at the end on purpose:** new camp stories append
+from 33 and only those five ever have to move again.
 
 ---
 
