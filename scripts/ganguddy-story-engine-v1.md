@@ -17,7 +17,7 @@ First destination: **Ganguddy (Dunns Swamp), Wollemi National Park, NSW.**
 | Fact trigger | **No fact enters a story without a physical object the kids find.** No lecturing. |
 | Stretch vocabulary | 2–3 new words per story, each used 3 times in context |
 | Magic rule | Exactly one: the lyrebird can replay any sound. Everything else is true. |
-| Ending | Every story ends with a **mission** — something to do, find, count or try at camp |
+| Ending | Every story ends with a **mission**, and the word "mission" is said out loud. Never "here's your first one" — a listener has no idea what "one" refers to, and stories are standalone, so there is no first. "Here's a mission for tonight." Not *task* or *job*; both sound like chores. |
 
 ### Who is speaking
 
@@ -84,7 +84,8 @@ and cost, not duration; duration only becomes real once a clip exists.
 Never the point of a story. Always underneath it. Rules:
 
 - **Body first, label second.** "Her chest was going fast and her hands wanted to do something" beats "she felt anxious." Kids locate feelings in their bodies before they can name them.
-- **One precise feeling word per story, folded into the stretch-vocabulary budget.** Not "sad" or "cross" — *frustrated, disappointed, nervous, relieved, proud, embarrassed, impatient, jealous*. Same rule: used three times.
+- **One precise feeling word per story, named exactly once.** Not "sad" or "cross" — *frustrated, disappointed, nervous, relieved, proud, embarrassed, impatient, jealous*. This is the one place the three-times rule does **not** apply. Tested on the family: a stretch word repeated three times teaches; a feeling word repeated three times nags. Name it once, in the body-first sentence, then trust it and move on.
+- **Don't underline the failing either.** The mistake happens, someone says the unkind true thing, and the story keeps going. No narrator explaining what the child should have done. The feeling was the consequence — that's enough.
 - **Regulation is disguised as bushcraft.** Going still to see an animal, breathing out slowly so you don't scare a fish, counting to three before cold water. Echo never says "calm down" — she says "be still, or she won't come." Same skill, no therapy voice.
 - **Not every feeling resolves.** Roughly one story in six should end with someone still a bit disappointed. Nobody learns a lesson out loud.
 - **Ratio target across 50:** a feeling is *noticed* in about half, *named* in about a third, and *talked about* in maybe four.
@@ -95,8 +96,15 @@ Never the point of a story. Always underneath it. Rules:
 ## 2. Character bible
 
 ### Rori — 5 — the brave one
+*Aurora. Traits from her parents: energetic, curious, funny, brave, protective
+of her sister.*
+
 - **Competence:** courage. First into the cold water, the dark, the narrow gap.
 - **Also:** she *notices*. She sees the thing.
+- **Protective of Adi.** Her bravery has a reason standing behind it — she goes
+  first partly so her little sister doesn't have to. Use this rather than
+  making her merely fearless.
+- Funny on purpose, not by accident. She knows when she's being funny.
 - **Flaw:** she moves too fast when she sees it, and it slips away.
 - **Series arc:** learning to go still. This is the spine of the whole collection.
 - **Catchphrase shape:** "I saw it. I *saw* it."
@@ -107,16 +115,31 @@ Never the point of a story. Always underneath it. Rules:
 - **Competence:** preparation. He brought the thing nobody thought they'd need.
 - **Flaw:** wants to be first at everything, including being right.
 - **Dynamic:** competitive with Rori, loyal underneath. Their races and dares drive plots.
-- *Placeholder traits — tighten once you know him better.*
+- **Traits from his parents:** curious, strong, thoughtful, silly and kind.
+  The silly matters and was missing — he is not only the careful one. He plans
+  hard, then does something ridiculous on purpose.
+- Thoughtful and kind soften the competitiveness: he wants to be first, and he
+  notices when someone else needed it more.
 
-### Skye — 4 — the quiet one
-- **Competence:** observation. She sees it first and says nothing.
-- **Flaw:** doesn't speak up until it's nearly too late.
+### Skye — 4 — the chatty watcher
+*Traits from her parents: cheeky, animated, stubborn, caring and chatty.*
+
+- **Competence:** observation. She sees it first — and now she's likely to say
+  so, loudly, about everything except the thing that matters.
+- **Flaw, revised:** not silence. She talks constantly, so the one true
+  observation gets lost in the stream and nobody registers it until later.
+  Same dramatic effect as the old "quiet one", it matches the real child, and
+  it is funnier.
+- **Stubborn:** once she has decided a thing is so, it is so. Sometimes she's right.
 - **Series arc:** her voice gets louder. By the late stories she's the one who stops the others.
 - She and the lyrebird understand each other — both quiet, both watchful.
 
 ### Adi — 2 — the namer
+*Adeline. Traits from her parents: happy, cheeky, funny, cuddly and independent.*
+
 - **Competence:** she points and names the animal. Correctly. Every time.
+- **Independent:** she does things herself, badly and completely. The bag she
+  packed alone is the model — nobody asked her to, and she is not sorry.
 - Vocabulary of maybe eight words, deployed devastatingly.
 - The comic engine and, roughly one story in five, the accidental key.
 - Anchor of all refrain stories.
@@ -150,7 +173,14 @@ Note: Echo is a *character*, not the narrator. NARRATOR carries stories 1–11 a
 12. Patience — nothing happens until they stop moving *(the house special)*
 13. How-it-works, told as adventure
 
-**Modes:** Prose (default) · Rhyming (anapaestic tetrameter, Donaldson-style) · Refrain (Adi-led, short, repeated line to shout)
+**Modes:** Prose (default) · Refrain (Adi-led, short, repeated line to shout)
+
+**Rhyming mode is retired.** The pilot held its metre on paper and lost it in
+synthesis — the model reads verse as sentences, and the anapaests flatten into
+prose with odd pauses where the line breaks were. Two adults and a five-year-old
+agreed independently. Story 1's plot survived and was rewritten as prose; the
+other rhyming rows in the matrix have been switched to Prose. Revisit only if a
+future model actually performs metre.
 
 ---
 
@@ -180,12 +210,12 @@ Note: Echo is a *character*, not the narrator. NARRATOR carries stories 1–11 a
 
 | # | Working title | Cat | Arc | Mode | Key kid | Artefact / trigger | Mission |
 |---|---|---|---|---|---|---|---|
-| 1 | The List | A | How-it-works | Rhyming | Billy | The packing list | Find one thing that's missing |
+| 1 | The List | A | How-it-works | Prose | Billy | The packing list | Find one thing that's missing |
 | 2 | Too Much Stuff | A | Trickster | Prose | Rori | An overstuffed bag | Choose three things you'd take |
 | 3 | Water You Can't Drink | A | How-it-works | Prose | Billy | Empty water container | Count the water bottles |
 | 4 | The Wood You Can't Burn | A | Small-one-saves | Prose | Skye | A fallen log full of insects | Look under one log |
 | 5 | Adi Packs a Bag | A | — | Refrain | Adi | Everything she owns | Say what Adi packed |
-| 6 | Four Hours | A | Voyage & return | Rhyming | Rori | The odometer | Count the towns |
+| 6 | Four Hours | A | Voyage & return | Prose | Rori | The odometer | Count the towns |
 | 7 | Where the Mountains Go Blue | G | How-it-works | Prose | Billy | Blue haze on the ranges | Spot when the blue starts |
 | 8 | The Last Shop | A | Quest | Prose | Billy | Kandos main street | Name the last shop you pass |
 | 9 | The Grey Powder Town | B | Time-slip | Prose | Rori | Cement works chimney | Find something made of concrete |
@@ -203,7 +233,7 @@ Note: Echo is a *character*, not the narrator. NARRATOR carries stories 1–11 a
 | C4 | Smoke in Your Eyes | M | — | Refrain | Adi | Bacon on the BBQ | Say what's for breakfast | happy |
 | C5 | The Long Drop | M | Overcoming fear | Prose | Skye | The pit toilet | Go once without help | nervous |
 | C6 | Torches | M | Overcoming fear | Prose | Billy | A beam in the dark | Turn your torch off for ten seconds | brave |
-| C7 | The Washing-Up Song | M | — | Rhyming | Adi | A stack of plates | Wash one thing | — |
+| C7 | The Washing-Up Song | M | — | Refrain | Adi | A stack of plates | Wash one thing | — |
 | C8 | What Was That Noise? | M | Mystery | Prose | Skye | An unexplained sound at night | Name three night sounds | scared → curious |
 
 | 13 | The Rock That Grew Steps | G | Mystery | Prose | Billy | Stepped orange pagoda | Count the layers |
@@ -212,13 +242,13 @@ Note: Echo is a *character*, not the narrator. NARRATOR carries stories 1–11 a
 | 16 | Who Ate This? | E | Mystery | Prose | Adi | Chewed seed pod | Find something that's been eaten |
 | 17 | The Slide in the Mud | C | Patience | Prose | Rori | Slide mark and bubbles | Watch the water at dusk |
 | 18 | The Animal That Broke the Rules | C | How-it-works | Prose | Billy | Platypus | Draw an animal made of parts |
-| 19 | Turtle Neck | C | Unlikely friendship | Rhyming | Skye | A long-necked turtle | Find a shell or a shape like one |
+| 19 | Turtle Neck | C | Unlikely friendship | Prose | Skye | A long-necked turtle | Find a shell or a shape like one |
 | 20 | The Gliders Come Out | C | Overcoming fear | Prose | Rori | Torchlight eyeshine | Go out after dark |
 | 21 | Adi Sees a Wallaby | C | — | Refrain | Adi | A swamp wallaby | Freeze when you see one |
 | 22 | The Laughing Family | D | Trickster | Prose | Billy | Kookaburra at breakfast | Laugh back |
 | 23 | The Eagle's Ladder | D | Quest | Prose | Rori | A wedge-tail circling | Watch one bird for 2 minutes |
 | 24 | Six Legs and a Thousand Eyes | E | Transformation | Prose | Skye | Dragonfly on a reed | Find a shed skin |
-| 25 | The Web at Six O'Clock | E | Patience | Rhyming | Skye | Dew on a web | Look for webs at dawn |
+| 25 | The Web at Six O'Clock | E | Patience | Prose | Skye | Dew on a web | Look for webs at dawn |
 | 26 | The Tree That Came Back | K | Survival | Prose | Rori | Charred trunk, green shoots | Find green on black |
 | 27 | The Secret Trees | F | Quest | Prose | Billy | A cone or fossil leaf shape | Draw a tree nobody's seen |
 | 28 | The Night They Watered a Canyon | K | Small-one-saves | Prose | Billy | Smoke smell / burnt ridge | Ask what you'd save first |
@@ -232,14 +262,14 @@ Note: Echo is a *character*, not the narrator. NARRATOR carries stories 1–11 a
 | 36 | The Hands on the Wall | I | Patience | Prose | Skye | Ochre hand stencils | Trace your hand in the air |
 | 37 | Stories That Aren't Ours | I | — | Prose | Rori | The lyrebird refuses | Ask a question, wait for the answer |
 | 38 | Ochre, Charcoal, Water | L | How-it-works | Prose | Adi | Charcoal from the fire | Draw with charcoal |
-| 39 | The Stone That Skipped Eight | L | Race | Rhyming | Billy | A flat stone | Beat your own record |
+| 39 | The Stone That Skipped Eight | L | Race | Prose | Billy | A flat stone | Beat your own record |
 | 40 | Cold Water Courage | L | Overcoming fear | Prose | Rori | The first step in | Count to three, go in |
 | 41 | The Paddle and the Wind | L | Voyage & return | Prose | Billy | A kayak turning sideways | Paddle to a landmark |
 | 42 | Nothing Is Biting | L | Patience | Prose | Rori | A still float | Wait ten whole minutes |
 | 43 | Damper, Ash and Patience | L | How-it-works | Prose | Skye | Dough that isn't ready | Make damper |
 | 44 | The House of Sticks | L | Quest | Prose | Adi | A leaning branch | Build a cubby |
 | 45 | Frost on the Tent | H | Survival | Prose | Billy | Ice on the fly | Feel the cold air pooling |
-| 46 | The Fog That Sat on the Water | H | Patience | Rhyming | Skye | Dawn fog | Get up before the sun once |
+| 46 | The Fog That Sat on the Water | H | Patience | Prose | Skye | Dawn fog | Get up before the sun once |
 | 47 | The Stars Nobody Owns | H | — | Prose | Rori | Dark sky | Find one constellation |
 | 48 | Leave No Trace | A | How-it-works | Prose | Billy | The empty campsite | Find one piece of rubbish |
 | 49 | Adi Says Goodbye | C | — | Refrain | Adi | Everything, one last time | Say goodbye to three things |

@@ -1,107 +1,117 @@
 # Story 1 — The List
 
-**Mode:** Rhyming (anapaestic tetrameter, couplets) · **Key kid:** Billy · **Category:** Trip prep
+**Mode:** Prose · **Key kid:** Billy · **Category:** Trip prep
 **Stretch words:** essential, disaster, sensible
-**Feeling:** proud → worried
-**Word count:** ~700 (~4:00 at 180 wpm — verse reads slower than prose)
-**Voices:** one. The narrator speaks every line, the kids included. In verse the
-metre carries the story, and swapping voices fights it.
-**Refrain:** the CHECK! call-and-response. Adi's, but the narrator says it.
+**Feeling:** worried, named once
+**Word count:** ~1000 (~5:00 at 200 wpm)
+**Voices:** NARRATOR only. Echo doesn't appear until story 12, so the narrator
+sets this mission.
+**Refrain:** Adi's CHECK!
 
 ---
 
-**NARRATOR:**
-There's a place with a river as green as a bean,
-with the strangest old rocks that you've ever seen,
-and a bird in the leaves who can copy your voice —
-but you can't just turn up. No. You pack. That's the choice.
+**NARRATOR:** There's a place with a river as green as a bean, and rocks so strange you'll think somebody built them on purpose and then wandered off. There's a bird in the leaves there who can copy any sound she's ever heard.
 
-So the trailer stood open. The driveway was wide,
-and Billy had List, and he held it with pride.
-"I have written it down and I've written it neat,
-and I promise you nothing is missing. Complete!"
+But you can't just turn up. First you have to pack.
 
-That was Billy. And Rori was desperate to go.
-"Can't we just GO?" she said. "Can't we go? Can't we? No?"
-"We cannot. We'll forget. And forgetting is bad,"
-answered Billy. "Now — sleeping bags?" "CHECK!" shouted Adi, glad.
+The trailer stood open in the driveway with its mouth wide, waiting to be filled. And Billy had the List.
 
-"Torches?" said Billy. And Adi yelled "CHECK!"
-"Boots for the rocks, and a hat for the sun,
-and a jumper for after the day is all done.
-Bandaids. A bucket. A saucepan. A spoon."
-"CHECK!" shouted Adi, a fraction too soon.
+Billy had made the List himself, on paper, with a pencil, and he was holding it the way you hold something that took a long time.
 
-"Now — WATER," said Billy. "This one is **essential**, you see.
-For the place where we're going has none. Not a drop. Not for free.
-There's a river, and rivers look lovely and clear,
-but you boil it, or bring it. Both work. Both go here."
+"I've written it down and I've written it neat," said Billy, "and nothing is missing. Nothing."
 
-"And the wood?" whispered Skye.
-"And the wood!" Billy said.
-"We bring wood in the car. We don't take it instead
-from the ground, though there's plenty. The fallen-down logs,
-they're a house for a beetle, a bed for the frogs.
-They're **essential** to something. They shouldn't get burned."
+"Can we just go?" said Rori. She was hopping. Rori did a lot of things while hopping. "Can we go? Can we? Can we go *now?*"
 
-Then Rori was pulling. And Rori was rough.
-"Is it done? Is it finished? Is that enough stuff?"
-"Marshmallows," said Billy. And everyone — all
-of them, even the grown-ups — yelled "CHECK!" down the hall.
+"We cannot," said Billy. "We'll forget something. Forgetting is bad." He looked at the List. "Sleeping bags?"
 
-Now Adi had packed. She had packed on her own.
-She had packed her own bag and she'd packed it alone,
-and inside were: a duck, and a shoe (only one),
-and eleven small rocks, and a hat with no sun-
-brim remaining at all, and a leaf, and a cup.
-"That's a **disaster**," said Billy. He zipped the thing up.
-"CHECK!" shouted Adi. It wasn't. A cup
-and a duck and a leaf never hurt anyone yet.
-A **disaster** is bigger than that. Don't forget.
+"CHECK!" shouted Adi.
 
-So they drove. And the road became stones.
-And the stones became dust in the grumbling bones
-of the trailer behind them. And Billy sat still
-with the list on his lap at the top of the hill —
+Adi was two. She did not know what most of the things on the List were. She had discovered that when Billy said a thing, you could shout CHECK, and this was the best game anyone had invented.
 
-and a horrible thought came and sat on his chest.
-The kind that arrives when you've done your whole best.
-"What if something's not on it? The list can't be wrong.
-But I wrote it," he whispered. "What if I've missed one all along?"
+"Torches?"
 
-That squeeze in your middle, that wobble, that weight —
-it's called being **worried**. It's normal. It's fine. It's not great,
-but it means that you care, and it means that you tried.
+"CHECK!"
 
-And that night, by the fire, with the dark opening wide,
-they were toasting the marshmallows, brown, gold and black —
-and they had no long sticks. Not a single. No knack
-for a marshmallow needs you a stick that is thin,
-and the one thing **essential** to marshmallow grin
-was a stick. And it wasn't a thing you could buy.
-"Oh no," whispered Rori.
+"Boots for the rocks. A hat for the sun. A jumper for after the sun goes."
 
-But Skye, with a sly
-little smile, walked away for a moment, and then
-came back with four skinny sticks held in her hand.
+"CHECK!" shouted Adi, a bit early.
 
-"They were just... on the ground," she said. "Under the trees."
-"So it's *not* on the list?" Billy said.
-"No." "But we've got them."
+"Bandaids. A bucket. A saucepan. A spoon."
 
-And so it went. Missed
-was a thing you could fix, and a real **disaster**
-is one that you can't. This one mended much faster.
+"CHECK!"
 
-A **sensible** boy learned a **sensible** thing,
-and it turned into joy round a fire in a ring:
-the most **sensible** plan leaves a bit of a gap
-for the things that turn up. They are not on the map.
+"Water," said Billy, and he stopped, because this one was different. "This one is **essential**."
 
-You can plan. You should plan. It's a wonderful skill.
-But the bush has some answers. It usually will.
+Skye looked up. "What's essential?"
 
-So here is your job, and it starts before dark:
-go and look in the car, or the shed, or the park,
-and find ONE forgotten thing. One. Just one. Go!
+"It means you can't do without it," said Billy. "Where we're going, there isn't any. Not a tap. Not a drop. There's a river, and rivers look lovely and clear, but you boil the water or you bring your own."
+
+"And the wood?" said Skye. "For the fire? There's wood everywhere there, I've seen photos, there's wood all over the ground —"
+
+"We bring wood in the car," said Billy. "We don't take it from the ground."
+
+"Why not? There's *loads* —"
+
+"Because a fallen branch is a house," said Billy. "There's a beetle in it. Probably a lizard under it. It's **essential** to something, even if it isn't essential to us."
+
+Skye thought about this for slightly less than one second. "Then I'm bringing the wood," she said, and went to get some, and told everybody about it for the next twenty minutes.
+
+"Marshmallows," said Billy.
+
+"CHECK!" shouted Adi, and Rori shouted it, and Skye shouted it, and one of the grown-ups shouted it from inside the house.
+
+Now, while all this was happening, Adi had packed her own bag. Nobody had asked her to. Nobody had helped. She had done the whole thing herself, with the door shut.
+
+Inside it were: a rubber duck. One shoe. Eleven small rocks. A hat with no brim left on it at all. A leaf. And a cup.
+
+"That's a **disaster**," said Billy, and zipped it up.
+
+"CHECK!" said Adi, who did not agree.
+
+She was right, as it happens. A duck and a leaf and eleven rocks have never hurt anybody. A **disaster** is something bigger than a strange bag, and Billy would find that out later, near the top of a hill.
+
+So they drove.
+
+The road went from smooth to bumpy, and the bumps turned to stones, and the stones threw up dust behind the trailer like a long brown flag. Billy sat with the List flat on his lap and watched the trees change from the tidy kind to the wild kind.
+
+And somewhere near the top of a hill, a thought arrived and sat down on his chest.
+
+*What if something isn't on it?*
+
+He'd checked it four times. But he was the one who wrote it, and if he'd forgotten a thing when he wrote it, then he'd have forgotten it every single time he checked.
+
+There's a squeeze you get in the middle of you when you've done your best work and you suddenly can't tell if it was good enough. It's called being **worried**. Billy looked out the window for a while and didn't say anything.
+
+And that night, by the fire, with the dark standing all around the edge of the light, they got the marshmallows out.
+
+And they had no sticks.
+
+Not one. Not a single long thin stick, and a marshmallow is no use to anybody without one.
+
+"Oh *no*," said Rori.
+
+Billy didn't say anything at all. This was the thing. This was the exact thing he'd been **worried** about, and it had come true, and it was marshmallows, which made it worse.
+
+Then Skye stood up, walked off into the dark about four steps, and came back with four skinny sticks.
+
+"They were on the ground," she said. "Under the trees. There's about a hundred."
+
+Billy looked at the sticks. "That's not on the list."
+
+"No," said Skye.
+
+"But we've got them."
+
+"We've got them," said Skye, and handed him one, and started telling everybody about how she'd found them, at length, twice.
+
+So it turned out that a thing you forgot wasn't a **disaster** after all. It was just a thing you hadn't found yet.
+
+That's the **sensible** part, and it's worth knowing: you should still make the list. Making the list is a **sensible** thing to do, and Billy was right to do it. But the most **sensible** list in the world leaves a gap at the bottom for whatever turns up — because out here, quite a lot turns up.
+
+So here's a mission, and it starts before it gets dark.
+
+Go and look in the car, or the shed, or the boot, or the park. Find one thing nobody remembered to pack. One. Just one.
+
+And when you find it —
+
 "CHECK!" shouted Adi.

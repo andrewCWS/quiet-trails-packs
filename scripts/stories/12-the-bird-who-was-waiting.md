@@ -1,8 +1,8 @@
 # Story 12 — The Bird Who Was Waiting
 
 **Mode:** Prose · **Key kid:** Rori · **Category:** Birds
-**Stretch words:** frustrated, mimic, patient
-**Feeling:** frustrated
+**Stretch words:** mimic (x3), patient (x1 — it's the story's point, not vocabulary)
+**Feeling:** frustrated, named once
 **Word count:** ~1010 (~5:00 at 200 wpm)
 **Voices:** NARRATOR carries all four kids in reported speech. ECHO is the only
 separate voice — being a different voice is how you know she isn't a child.
@@ -45,9 +45,9 @@ Rori stopped where it had been. There was a little dug-up patch, and a scatter o
 
 "I didn't *mean* to," said Rori.
 
-Her face went hot. There's a feeling you get when you wanted something very much and you were the reason it went away. It sits in your throat and makes you want to kick a rock. That feeling is called being **frustrated**, and Rori was extremely frustrated.
+Her face went hot. There's a feeling you get when you wanted something very much and you were the reason it went away. It sits in your throat and makes you want to kick a rock. That feeling is called being **frustrated**.
 
-She kicked a rock. Being **frustrated** at a rock does not help. She kicked it anyway.
+She kicked a rock. It was a good rock. It didn't help much.
 
 "It didn't fly," said Skye, quietly.
 
@@ -77,7 +77,7 @@ And then the bush started to fill in around her.
 
 A tick-tick-tick from somewhere in a branch. Water slapping softly on rock. Wind moving the top of one tree and not the others. A tiny scuffle that could have been a lizard. All of it had been there the whole time. She just hadn't been still enough to let it in.
 
-That's what being **patient** actually is. Not waiting for nothing. Waiting until you notice there was never nothing. A **patient** person isn't bored. A **patient** person is busy listening.
+That's what being **patient** actually is. Not waiting for nothing. Waiting until you notice there was never nothing.
 
 Then a kookaburra laughed. Right there, close.
 
@@ -107,7 +107,7 @@ Then the bird spoke, and it did not sound like a bird at all.
 
 **ECHO:** I know. You'll do it again. But you'll do it less.
 
-Here's your first one. Tonight, before dinner, sit down somewhere and be still for one whole minute. Don't look for anything. Just let it come in.
+Here's a mission for tonight. Before dinner, sit down somewhere and be still for one whole minute. Don't look for anything. Just let it come in.
 
 I'll know if you cheat.
 
