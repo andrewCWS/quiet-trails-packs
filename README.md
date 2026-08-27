@@ -17,6 +17,10 @@ See `CLAUDE.md` for setup, script conventions and current tasks.
 
 ## Listening
 
-The feed is at
-`https://andrewcws.github.io/quiet-trails-packs/audio/index.xml` —
-add it in Apple Podcasts via *Library → ⋯ → Add a Show by URL*.
+**<https://andrewcws.github.io/quiet-trails-packs/>** — send that to anyone who
+wants the pack. It has the feed address with a copy button and the steps for
+iPhone and Android. The full story list is at
+[/stories.html](https://andrewcws.github.io/quiet-trails-packs/stories.html).
+
+The feed itself is
+`https://andrewcws.github.io/quiet-trails-packs/audio/index.xml`.
