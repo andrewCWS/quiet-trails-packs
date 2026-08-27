@@ -275,7 +275,15 @@ future model actually performs metre.
 | 11 | Adi Names Everything | D | — | Refrain | Adi | Roadside animals | Name three animals |
 | 12 | The Bird Who Was Waiting | D | Patience | Prose | Rori | First lyrebird sighting | Sit still for one minute |
 
-**Act II-a — Making Camp (C1–C8).** Slots between #12 and #13. Highest emotional density in the collection — setting up camp is where tired kids and tired parents collide, so this is where the feelings layer does most of its work.
+**Act II-a — Making Camp (C1–C8), numbered 51–58 in the feed.** Slots between
+#12 and #13 in listening order, but episode numbers have to be integers and
+there are none free between 12 and 13. Written ones took 51–55 rather than
+renumbering stories already published, since a podcast app remembers episode
+numbers. Stories are standalone, so feed order is cosmetic. If it ever stops
+being cosmetic, the fix is to renumber the block to 13–20 and shift 13–50 up by
+eight — one pass over this table and the filenames.
+
+Slots between #12 and #13. Highest emotional density in the collection — setting up camp is where tired kids and tired parents collide, so this is where the feelings layer does most of its work.
 
 | # | Working title | Cat | Arc | Mode | Key kid | Artefact / trigger | Mission | Feeling |
 |---|---|---|---|---|---|---|---|---|
