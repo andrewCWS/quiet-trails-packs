@@ -5,6 +5,45 @@ First destination: **Ganguddy (Dunns Swamp), Wollemi National Park, NSW.**
 
 ---
 
+## 0. Tone — the one that overrules the rest
+
+**Everybody should finish a story feeling happy, calm and lifted.** If a rule
+below ever fights that, the rule loses.
+
+The failure mode isn't dullness, it's a narrator who judges. It arrives quietly
+and it sounds reasonable at the time, so it's worth knowing the specific shapes
+it takes:
+
+- **The narrator delivering a verdict on a child.** An early draft had Billy say
+  "that's not fair" about the lyrebird and the narrator answer *"It is
+  completely fair, and it is completely real."* That's an adult correcting a
+  five-year-old for a reasonable reaction, and it was the single most
+  off-putting thing in the pilot. Replaced with curiosity — Billy asks *how* it
+  does that, Skye recognises the exact sound, Rori says "do it again", and it
+  does. Same facts follow, no one is wrong.
+- **Curiosity beats correction, every time.** When a child gets something wrong,
+  the interesting move is not to correct them. It's to ask what would happen if
+  they were right, or to have the world answer instead.
+- **The narrator never tells you how to feel about a character.** No "which for
+  Billy was a very big deal", no "she should have known better", no summarising
+  someone's shortcoming for the listener. Show what they do; let the listener
+  decide.
+- **A running joke about a real child stops at one.** Two jokes about Skye
+  talking too much is where affectionate turns into pointed. These are real kids
+  and their parents are in the car.
+- **Warm, not mocking.** Skye explaining the beetle situation to everybody in the
+  house one at a time is funny *and* she is right. That's the register: the
+  laugh never comes at the cost of the child's competence.
+- **Nobody is the problem.** Things go wrong because things go wrong. A forgotten
+  stick is not a failure of character.
+- **Never end on a deficit.** The last thirty seconds are the mission, and the
+  mission is an invitation, not homework.
+
+A quick test before a story goes out: if a sentence would make one of the four
+children feel got at were they old enough to notice, cut it. Not soften — cut.
+
+---
+
 ## 1. Format rules
 
 | Rule | Spec |
@@ -290,9 +329,34 @@ future model actually performs metre.
 
 ---
 
-## 6. Open items
+## 6. Before a story ships — the checklist
+
+Every one of these was learned the expensive way on the two pilots.
+
+1. **Tone.** Re-read section 0. Any narrator verdict on a child? Cut it.
+2. **Attribution.** Every line a child speaks says who said it, in the prose.
+   Only `NARRATOR:` and `ECHO:` tags exist.
+3. **Feeling word** named once, body first. The little arc can show; the
+   narrator must not point at it.
+4. **Tendencies shown, never announced**, and not the same child every story.
+5. **Length** 900–1100 words. Under 900 lands short of five minutes.
+6. **Facts** ≤90 words, in ≤2 chunks, each triggered by an object they find,
+   never in the last minute.
+7. **Stretch words** 2–3, used three times each. Feeling words are exempt.
+8. **Mission** at the end, with the word "mission" said aloud, and standalone —
+   no "first", no reference to another story.
+9. **Sound effects** as `(sfx: key)` inline. Check the key exists in `sfx/`;
+   the generator warns but still produces the file without it.
+10. **Names** — anything the model is likely to mangle goes in `PRONUNCIATION`
+    or `PHONEMES` in `narrate.py`, not respelled in the script.
+11. **Listen to it.** Every problem in this document was found by listening, and
+    none of them by reading.
+
+---
+
+## 7. Open items
 
 - Confirm Billy's and Skye's ages
 - Confirm lyrebirds actually occur at Ganguddy (vs the wetter Wollemi gullies) — if not, keep her as a visitor from the gullies rather than a resident
-- Test one rhyming script in ElevenLabs before committing to the eight rhyming stories — TTS tends to flatten metre
+- ~~Test one rhyming script before committing to the eight rhyming stories~~ — done, verse retired, see *Modes*
 - Source the Common Ground Wiradjuri recordings to play alongside these

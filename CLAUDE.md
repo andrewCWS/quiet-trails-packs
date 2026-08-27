@@ -133,10 +133,15 @@ The Ganguddy 50 is the first trip pack. Alignments already in place:
 - Calm by default: the guide character only appears when the kids are still,
   so patience is the format's mechanic rather than a message.
 
-**Unresolved:** Quiet Trails specifies 30-minute stories in 6 chapters; this
-engine produces 5-minute standalones. Six of ours is one of those, and the act
-structure already groups that way (Getting Ready 5 · The Drive 7 · Making Camp 8
-· At Camp 32 · Going Home 6). Decide deliberately which is canonical.
+**Resolved: the 5-minute standalone is canonical.** A car is an interruptible
+place — someone needs a wee, someone falls asleep, someone has a question that
+can't wait — and a 5-minute unit survives that where a 30-minute one doesn't.
+The mission also needs a gap after it to be acted on. Chaptering stays available
+as *packaging*: six standalones can be presented as a 30-minute six-chapter
+story without rewriting a word, because the acts already group that way
+(Getting Ready 5 · The Drive 7 · Making Camp 8 · At Camp 32 · Going Home 6).
+The reverse isn't true — you can't split a 30-minute story into standalones
+after the fact. So write standalone, chapter later if the app wants it.
 
 **Next structural step:** have `narrate.py` emit a JSON manifest alongside the
 RSS — titles, durations, categories, missions, chapter grouping. That manifest is
@@ -148,11 +153,22 @@ eventually.
 
 ---
 
+## How many stories
+
+Target is roughly **2 hours of audio** — 45 minutes out, 45 at camp, 45 back.
+At ~5:30 each that's about **22 stories**, not 50. The matrix runs to 50 and
+should stay there as the long-term shape, but the trip pack is the first 22 or
+so, and Acts I–II (stories 1–12) are the ones that earn their place in a car.
+
+---
+
 ## Story engine, in brief
 
 Full detail in `scripts/ganguddy-story-engine-v1.md`. The essentials:
 
-- 600–1000 words, ~5 min. Smart 5-year-old, 2-year-old in the back.
+- 900–1100 words, ~5:30. Smart 5-year-old, 2-year-old in the back.
+- **Tone overrules every other rule:** happy, calm, lifted. No narrator verdicts
+  on a child, curiosity instead of correction. Section 0 of the spec.
 - **No fact enters a story without a physical object the kids find.** Rusted
   machinery, a charred trunk with green shoots, scribbles on gum bark. Never
   lecture.
