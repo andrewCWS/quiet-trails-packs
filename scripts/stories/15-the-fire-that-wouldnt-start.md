@@ -47,7 +47,7 @@ Each layer's only job is to get the next layer hot. That's it. A fire is a **gra
 
 And the other half is air. Fire needs **oxygen**, and it needs it moving through the middle, which means the wood has to be stacked with gaps — leaning together like a tepee, or crossed like a little hut. Pack it tight and you get exactly what Rori had: hot, smoky, and going nowhere.
 
-So they pulled the whole thing apart, which Rori did not enjoy, and started again.
+So they pulled the whole thing apart, which took a while, and started again.
 
 Rori went and got kindling. She was extremely good at this once she understood what she was hunting for — the thinnest dry twigs, snapped off the underside of a fallen branch where the rain hadn't got, and the test is that it snaps rather than bends. She came back with three handfuls, sorted by thickness, without being asked to sort them.
 

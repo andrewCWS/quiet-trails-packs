@@ -19,7 +19,7 @@ Then the crunching stopped.
 
 They were here.
 
-The doors opened and four kids came out of two cars like water out of a bottle. Rori first, because Rori was always first. Then Billy, half a second behind, because Billy did not enjoy being second. Then Skye, who took her time. Then Adi, who had to be lifted, and who was already pointing at something.
+The doors opened and four kids came out of two cars like water out of a bottle. Rori first, because Rori was always first. Then Billy, half a second behind, already looking at the ground. Then Skye, who took her time. Then Adi, who had to be lifted, and who was already pointing at something.
 
 "Bird," said Adi.
 

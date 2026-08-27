@@ -70,7 +70,7 @@ From the leaf litter at the edge of the clearing, a voice.
 
 Wherever you stop next — a park, a beach, the side of a road, the place you have lunch — find one piece of rubbish that isn't yours. One. And take it with you.
 
-Not all of it. You'll never get all of it and trying will make you miserable.
+Not all of it. You won't get all of it, and you don't have to.
 
 One piece, every place you stop. That's it. That's the mission.
 

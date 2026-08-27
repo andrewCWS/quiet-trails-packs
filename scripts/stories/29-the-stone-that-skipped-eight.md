@@ -14,7 +14,7 @@
 
 He had thrown, by his own count, more than forty. Every single one had gone out in a fine arc, landed with a solid *plunk*, and gone straight to the bottom like a stone, which is what it was.
 
-Rori could skip a stone. Rori had never been taught, had never thought about it, and got two or three skips most throws with a bent arm and no apparent effort whatsoever, which Billy found difficult to be gracious about.
+Rori could skip a stone. Rori had never been taught, had never thought about it, and got two or three skips most throws with a bent arm and no apparent effort whatsoever.
 
 "You're doing it wrong," said Rori helpfully.
 

@@ -78,7 +78,7 @@ Skye started grinning before she'd even turned round.
 
 **ECHO:** I do that one when I'm bored.
 
-**NARRATOR:** "That's not fair," said Skye, delighted.
+**NARRATOR:** "That was *you*?" said Skye, delighted.
 
 **ECHO:** No.
 

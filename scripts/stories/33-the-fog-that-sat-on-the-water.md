@@ -58,7 +58,7 @@ But somebody had seen her. From the leaf litter behind the rock, a voice she rec
 
 **ECHO:** I saw it too.
 
-**NARRATOR:** A brown bird with a long untidy tail was standing very still under the trees. That's Echo. She turns up for people who've gone quiet, and Skye had been quiet for forty minutes, which for Skye is close to a world record.
+**NARRATOR:** A brown bird with a long untidy tail was standing very still under the trees. That's Echo. She turns up for people who've gone quiet, and Skye had been sitting on a cold rock without moving since before the light came.
 
 **ECHO:** They think you made it up.
 

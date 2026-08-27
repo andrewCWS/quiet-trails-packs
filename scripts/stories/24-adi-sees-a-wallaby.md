@@ -46,9 +46,9 @@ The wallaby put its head up, turned side-on, and thumped its back feet on the gr
 
 "That was ME," said Skye, devastated.
 
-That was Skye.
+It was. Ninety seconds is a long time to be a statue, and legs are not built for it.
 
-Everybody has been Skye. Everybody will be Skye again.
+The wallaby did not seem to mind. It had eaten what it came for.
 
 "Freeze," said Adi, cheerfully, to an empty patch of bracken.
 
