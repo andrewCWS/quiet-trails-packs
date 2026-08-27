@@ -4,7 +4,7 @@
 
 **Mode:** Prose · **Key kid:** Skye · **Category:** Animals · **Arc:** Unlikely friendship
 **Stretch words:** sideways, hinge, harmless
-**Feeling:** embarrassed, named once
+**Feeling:** not named in this one
 **Word count:** ~1060
 **Voices:** NARRATOR and ECHO. Echo sets the mission.
 
@@ -46,15 +46,17 @@ And the smell is its whole defence. No teeth to speak of, no speed, no claws wor
 
 The turtle was also not lost. Long-necked turtles walk overland fairly often — moving between waterholes, or a female going off to find dry ground to dig a nest in. Carrying one to the water is the opposite of helping. It's picking somebody up in the middle of a walk and putting them back at the start.
 
-Rori did not enjoy learning that part.
+Rori looked at her hands. Then at the turtle, still going, still in exactly the same direction. Then at her hands again.
 
-There's a hot, prickling, want-to-be-somewhere-else feeling that arrives when you did a kind thing and it turns out to have been the wrong thing, in front of everybody. That feeling is called being **embarrassed**, and Rori had it right up in her ears.
+"So it didn't want help," she said.
+
+It did not want help. It wanted about four more minutes and a gap in the fence.
 
 And here's where Skye did something that mattered.
 
-She didn't say *I told you.* She had told her — she'd said "it's got a whole plan" about four seconds before it got picked up — and she was completely right, and she said nothing about it at all.
+She had told her — she'd said "it's got a whole plan" about four seconds before it got picked up — and she was completely right, and what she said now was not that.
 
-Instead she said: "Where do you reckon it's going?"
+What she said was: "Where do you reckon it's going?"
 
 And they followed it. All the way, at a distance, for about twenty minutes, while it went under a fence, through some long grass, round a rock rather than over it, and down into a completely different bit of water on the other side of the campsite that none of them had known was there.
 
@@ -70,9 +72,9 @@ It knew the whole time.
 
 **ECHO:** Same line, more or less. I've heard her in the grass. She goes round that rock every time and I've never worked out why.
 
-**NARRATOR:** "I picked her up," said Rori.
+**NARRATOR:** "I thought she was stuck," said Rori.
 
-**ECHO:** I know. She's **harmless** and she's not helpless, and those are different. You'll remember the difference now, because of your hands.
+**ECHO:** Everybody does. She's **harmless** and she's not helpless, and those are different. You'll remember the difference now, on account of your hands.
 
 **NARRATOR:** She scratched at the leaves, found something, ate it.
 

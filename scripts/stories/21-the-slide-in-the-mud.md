@@ -64,7 +64,7 @@ Rori sat perfectly still for the last twenty minutes of it, which is a very long
 
 No. Not tonight.
 
-There's a particular flatness that comes when you did everything right and it didn't happen anyway, and it isn't the same as failing. It's worse in some ways, because there's nothing to fix.
+There's a particular flatness that comes when you did everything right and it didn't happen anyway. It isn't the same as failing. There's nothing you'd do differently. It's just how waiting ends sometimes.
 
 **ECHO:** She was there.
 
@@ -72,19 +72,19 @@ There's a particular flatness that comes when you did everything right and it di
 
 "Where?" said Rori.
 
-**ECHO:** Down the far end. She went out at the other side of the reeds. I heard her.
+**ECHO:** Down the far end, past the reeds. I heard her go in.
 
-**NARRATOR:** "That's not *fair.*"
+**NARRATOR:** "We were watching the *wrong bit.*"
 
-**ECHO:** No.
+**ECHO:** You were watching the bit with her slide on it. That was the right bit. She just went out the other door.
 
-**NARRATOR:** And that was true, and Echo didn't dress it up, and honestly that was better.
+**NARRATOR:** Rori thought about that for a while.
 
 **ECHO:** You sat still for forty minutes. Two nights ago you couldn't do four.
 
-The slide's still there. She used it this morning and she'll use it tomorrow. You've got the **evidence** — you just haven't got the animal.
+And the slide's still there. She used it this morning, she'll use it tomorrow, and she'll be using it long after you've gone home.
 
-Most of what's out here, that's all you ever get. The tracks are the animal. You learn to be pleased about tracks or you spend your whole life disappointed.
+That's the good part. You know where she lives now. Not a guess — you've got the **evidence**. You could come back in ten years and knock.
 
 **NARRATOR:** She scratched twice at the leaves, found something, ate it.
 
@@ -102,6 +102,6 @@ You probably won't see one. Go anyway.
 
 On the third night, Skye saw it — just for a moment, a ring and a bump and then nothing, right at the far end, in the last of the light.
 
-Rori missed it. She was looking the other way.
+Rori missed it. She was looking at the wrong end, at a duck.
 
-She says she doesn't mind.
+She made Skye describe it four times, and then went back down the next night anyway, on her own, and sat in the dark for half an hour.

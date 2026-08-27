@@ -519,7 +519,7 @@ def write_feed(out_dir, base_url=None):
         secs = duration_of(f)
         pub = formatdate(now - (len(files) - i) * 86400, usegmt=True)
         items.append(f"""    <item>
-      <title>{escape(title)}</title>
+      <title>{episode}. {escape(title)}</title>
       <itunes:episode>{episode}</itunes:episode>
       <itunes:season>{SEASON}</itunes:season>
       <itunes:duration>{hhmmss(secs)}</itunes:duration>
@@ -538,6 +538,7 @@ def write_feed(out_dir, base_url=None):
     <language>en-au</language>
     <itunes:author>{escape(SHOW_AUTHOR)}</itunes:author>
     <itunes:explicit>false</itunes:explicit>
+    <itunes:type>serial</itunes:type>
     <itunes:image href="{escape(base)}/{SHOW_IMAGE}"/>
     <itunes:category text="Kids &amp; Family"/>
     <itunes:block>Yes</itunes:block>
