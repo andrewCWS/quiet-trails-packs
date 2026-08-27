@@ -59,7 +59,7 @@ Skye had been standing still the whole time, which is why she'd seen it properly
 
 "Okay," said Billy. "Okay. So if it runs instead of flying, it can't get away fast. So it must hide instead. So if we don't move, it doesn't know where we are."
 
-Billy said all of this out loud, which was how Billy thought. Then he sat down in the dirt without checking whether the dirt was clean, which for Billy was a very big deal.
+Billy said all of this out loud, which was how Billy thought. Then he sat down in the leaves and stopped talking, which for Billy was the hard part.
 
 "Everyone sit down," said Billy. "Nobody talk."
 
