@@ -1,4 +1,4 @@
-# Story 24 — Adi Says Goodbye
+# Story 36 — Adi Says Goodbye
 
 **Matrix:** story 49 in the 50-story plan
 

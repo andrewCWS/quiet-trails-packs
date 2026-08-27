@@ -1,4 +1,4 @@
-# Story 22 — The Stars Nobody Owns
+# Story 34 — The Stars Nobody Owns
 
 **Matrix:** story 47 in the 50-story plan
 

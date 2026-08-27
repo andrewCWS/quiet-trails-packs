@@ -1,4 +1,4 @@
-# Story 21 — The Fog That Sat on the Water
+# Story 33 — The Fog That Sat on the Water
 
 **Matrix:** story 46 in the 50-story plan
 

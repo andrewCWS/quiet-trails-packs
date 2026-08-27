@@ -1,4 +1,4 @@
-# Story 25 — What We Took Home
+# Story 37 — What We Took Home
 
 **Matrix:** story 50 in the 50-story plan
 

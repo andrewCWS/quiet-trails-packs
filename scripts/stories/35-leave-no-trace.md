@@ -1,4 +1,4 @@
-# Story 23 — Leave No Trace
+# Story 35 — Leave No Trace
 
 **Matrix:** story 48 in the 50-story plan
 
