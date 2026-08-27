@@ -54,7 +54,7 @@ Skye looked up. "What's essential?"
 
 "Because a fallen branch is a house," said Billy. "There's a beetle in it. Probably a lizard under it. It's **essential** to something, even if it isn't essential to us."
 
-Skye thought about this for slightly less than one second. "Then I'm bringing the wood," she said, and went to get some, and told everybody about it for the next twenty minutes.
+Skye thought about this for slightly less than one second. "Then I'm bringing the wood," she said, and went and got some, and explained the beetle situation to everybody in the house, one at a time.
 
 "Marshmallows," said Billy.
 
@@ -102,7 +102,7 @@ Billy looked at the sticks. "That's not on the list."
 
 "But we've got them."
 
-"We've got them," said Skye, and handed him one, and started telling everybody about how she'd found them, at length, twice.
+"We've got them," said Skye, and handed him one, and told everybody how she'd found them, twice, because it was a story worth telling twice.
 
 So it turned out that a thing you forgot wasn't a **disaster** after all. It was just a thing you hadn't found yet.
 

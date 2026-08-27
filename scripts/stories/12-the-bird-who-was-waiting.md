@@ -89,9 +89,15 @@ There was a brown bird with an untidy tail, standing very still in the leaves, l
 
 And then it made the sound of a whipbird. (sfx: whipbird) And then a magpie. (sfx: magpie) And then, unmistakably, the sound of a car door slamming. (sfx: car-door)
 
-"That's, that's not *fair,*" said Billy.
+"How is it *doing* that?" said Billy.
 
-It is completely fair, and it is completely real. That bird is a lyrebird, and a lyrebird is the best **mimic** in the world. To **mimic** something means to copy it exactly. Most of what a lyrebird sings isn't its own song at all. It's other birds. Dozens of them. And here's the strangest part: lyrebirds don't learn those sounds from the birds. They learn them from *other lyrebirds*. A sound can get passed down from bird to bird to bird for years and years, long after the thing that made it has gone.
+"That was our car," said Skye. "That was our actual car, that was the actual door of it, that was the sound our actual door makes when Dad shuts it —"
+
+"Do it again," said Rori.
+
+And it did.
+
+That bird is a lyrebird, and a lyrebird is the best **mimic** in the world. To **mimic** something means to copy it exactly. Most of what a lyrebird sings isn't its own song at all. It's other birds. Dozens of them. And here's the strangest part: lyrebirds don't learn those sounds from the birds. They learn them from *other lyrebirds*. A sound can get passed down from bird to bird to bird for years and years, long after the thing that made it has gone.
 
 Which means a lyrebird is a bit like a very old song that walks around on legs. A **mimic** of a mimic of a mimic.
 
@@ -105,7 +111,7 @@ Then the bird spoke, and it did not sound like a bird at all.
 
 **NARRATOR:** "I'm sorry," said Rori.
 
-**ECHO:** I know. You'll do it again. But you'll do it less.
+**ECHO:** I know. You'll probably do it again. Most people do. You'll get better at it.
 
 Here's a mission for tonight. Before dinner, sit down somewhere and be still for one whole minute. Don't look for anything. Just let it come in.
 
