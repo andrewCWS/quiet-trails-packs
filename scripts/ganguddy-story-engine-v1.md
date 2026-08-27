@@ -120,19 +120,19 @@ of her sister.*
 - Funny on purpose, not by accident. She knows when she's being funny.
 - **Tendency:** she moves too fast when she sees it, and it slips away.
 - **Series arc:** learning to go still. This is the spine of the whole collection.
+- **Dynamic with Billy:** they race. Constantly. It is even, affectionate and funny, and it is not a flaw in either of them.
 - **Catchphrase shape:** "I saw it. I *saw* it."
 
 ### Billy — 5 — the other brave one
+*Traits from his parents: curious, strong, thoughtful, silly and kind.*
+
 - Matched pair with Rori, deliberately. Same age, same nerve.
-- **Differentiated by kind of bravery:** Rori's is physical (heights, cold, dark). Billy's is social and verbal — he asks the question, talks to the stranger, makes the plan out loud.
-- **Competence:** preparation. He brought the thing nobody thought they'd need.
-- **Tendency:** wants to be first at everything, including being right.
-- **Dynamic:** competitive with Rori, loyal underneath. Their races and dares drive plots.
-- **Traits from his parents:** curious, strong, thoughtful, silly and kind.
-  The silly matters and was missing — he is not only the careful one. He plans
-  hard, then does something ridiculous on purpose.
-- Thoughtful and kind soften the competitiveness: he wants to be first, and he
-  notices when someone else needed it more.
+- **Differentiated by kind of bravery:** Rori's is physical (heights, cold, dark). Billy's is strong and steady — he'll carry the heavy thing, go and ask, stay when it would be easier to leave.
+- **Competence:** preparation, which comes out of being curious. He wanted to know what it would be like, so he thought it through, so he brought the thing nobody else thought of.
+- **Tendency:** thoughtful takes time. Occasionally he's still working it out while everyone else has gone.
+- **Silly on purpose.** He is not only the careful one. He does the ridiculous thing knowingly, usually right after the serious thing, and it's often what breaks a tense moment.
+- **Kind:** he notices who needed it more, and hands it over without making a speech about it.
+- **Dynamic:** races and dares with Rori drive plots — mutual, even, and fun. Competition between them is a *shared engine*, not a fault belonging to either of them. Neither has to lose a lesson at the end of it.
 
 ### Skye — 4 — the chatty watcher
 *Traits from her parents: cheeky, animated, stubborn, caring and chatty.*
