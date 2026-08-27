@@ -16,8 +16,58 @@
       <itunes:season>1</itunes:season>
       <itunes:duration>5:29</itunes:duration>
       <guid isPermaLink="false">https://andrewcws.github.io/quiet-trails-packs/audio/01-the-list.mp3</guid>
-      <pubDate>Tue, 25 Aug 2026 06:03:02 GMT</pubDate>
+      <pubDate>Thu, 20 Aug 2026 06:31:04 GMT</pubDate>
       <enclosure url="https://andrewcws.github.io/quiet-trails-packs/audio/01-the-list.mp3" length="5271464" type="audio/mpeg"/>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Too Much Stuff</title>
+      <itunes:episode>2</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:duration>4:54</itunes:duration>
+      <guid isPermaLink="false">https://andrewcws.github.io/quiet-trails-packs/audio/02-too-much-stuff.mp3</guid>
+      <pubDate>Fri, 21 Aug 2026 06:31:04 GMT</pubDate>
+      <enclosure url="https://andrewcws.github.io/quiet-trails-packs/audio/02-too-much-stuff.mp3" length="4722954" type="audio/mpeg"/>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Water You Can't Drink</title>
+      <itunes:episode>3</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:duration>4:56</itunes:duration>
+      <guid isPermaLink="false">https://andrewcws.github.io/quiet-trails-packs/audio/03-water-you-cant-drink.mp3</guid>
+      <pubDate>Sat, 22 Aug 2026 06:31:04 GMT</pubDate>
+      <enclosure url="https://andrewcws.github.io/quiet-trails-packs/audio/03-water-you-cant-drink.mp3" length="4749867" type="audio/mpeg"/>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>The Wood You Can't Burn</title>
+      <itunes:episode>4</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:duration>4:40</itunes:duration>
+      <guid isPermaLink="false">https://andrewcws.github.io/quiet-trails-packs/audio/04-the-wood-you-cant-burn.mp3</guid>
+      <pubDate>Sun, 23 Aug 2026 06:31:04 GMT</pubDate>
+      <enclosure url="https://andrewcws.github.io/quiet-trails-packs/audio/04-the-wood-you-cant-burn.mp3" length="4499635" type="audio/mpeg"/>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Adi Packs a Bag</title>
+      <itunes:episode>5</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:duration>3:12</itunes:duration>
+      <guid isPermaLink="false">https://andrewcws.github.io/quiet-trails-packs/audio/05-adi-packs-a-bag.mp3</guid>
+      <pubDate>Mon, 24 Aug 2026 06:31:04 GMT</pubDate>
+      <enclosure url="https://andrewcws.github.io/quiet-trails-packs/audio/05-adi-packs-a-bag.mp3" length="3084326" type="audio/mpeg"/>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Four Hours</title>
+      <itunes:episode>6</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:duration>4:36</itunes:duration>
+      <guid isPermaLink="false">https://andrewcws.github.io/quiet-trails-packs/audio/06-four-hours.mp3</guid>
+      <pubDate>Tue, 25 Aug 2026 06:31:04 GMT</pubDate>
+      <enclosure url="https://andrewcws.github.io/quiet-trails-packs/audio/06-four-hours.mp3" length="4434277" type="audio/mpeg"/>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
@@ -26,7 +76,7 @@
       <itunes:season>1</itunes:season>
       <itunes:duration>5:30</itunes:duration>
       <guid isPermaLink="false">https://andrewcws.github.io/quiet-trails-packs/audio/12-the-bird-who-was-waiting.mp3</guid>
-      <pubDate>Wed, 26 Aug 2026 06:03:02 GMT</pubDate>
+      <pubDate>Wed, 26 Aug 2026 06:31:04 GMT</pubDate>
       <enclosure url="https://andrewcws.github.io/quiet-trails-packs/audio/12-the-bird-who-was-waiting.mp3" length="5299925" type="audio/mpeg"/>
       <itunes:explicit>false</itunes:explicit>
     </item>
