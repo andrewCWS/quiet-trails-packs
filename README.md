@@ -18,9 +18,8 @@ See `CLAUDE.md` for setup, script conventions and current tasks.
 ## Listening
 
 **<https://andrewcws.github.io/quiet-trails-packs/>** — send that to anyone who
-wants the pack. It has the feed address with a copy button and the steps for
-iPhone and Android. The full story list is at
-[/stories.html](https://andrewcws.github.io/quiet-trails-packs/stories.html).
+wants the pack. Feed address with a copy button, how to add it on iPhone or
+Android, and the full story list. Built from `index.html` at the repo root.
 
 The feed itself is
 `https://andrewcws.github.io/quiet-trails-packs/audio/index.xml`.

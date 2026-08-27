@@ -3,17 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Thirty-seven short stories for the drive to Ganguddy. How to add them on iPhone or Android.">
+<meta name="description" content="Thirty-seven short stories for the drive to Ganguddy, and how to add them to your phone.">
 <meta name="color-scheme" content="light dark">
-<meta property="og:title" content="Stories for the Drive — Quiet Trails">
-<meta property="og:description" content="Thirty-seven short stories for the drive to Ganguddy. How to add them on iPhone or Android.">
+<meta property="og:title" content="Stories for the Drive">
+<meta property="og:description" content="Thirty-seven short stories for the drive to Ganguddy.">
 <meta property="og:type" content="website">
 <title>Stories for the Drive — Quiet Trails</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127911;</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-
 <style>
   :root {
     --ground:  #E9EDE4;
@@ -71,7 +70,7 @@
   }
 
   .wrap {
-    max-width: 34rem;
+    max-width: 42rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -92,27 +91,27 @@
   h1 {
     font-family: var(--display);
     font-weight: 600;
-    font-size: clamp(2.1rem, 9vw, 2.9rem);
+    font-size: clamp(2.1rem, 8vw, 3.1rem);
     line-height: 1.05;
     letter-spacing: -0.015em;
     text-wrap: balance;
     margin: 0;
   }
 
-  .standfirst { margin: 0; color: var(--muted); }
+  .standfirst { margin: 0; color: var(--muted); max-width: 34rem; }
 
-  /* ---- the feed ---- */
-  .feed {
+  /* ---- add-to-phone block ---- */
+  .add {
     background: var(--surface);
     border: 1px solid var(--hair);
     border-radius: 3px;
-    padding: 1.1rem;
+    padding: 1.15rem;
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
+    gap: 0.9rem;
   }
 
-  .feed label {
+  .add > label {
     font-family: var(--mono);
     font-size: 0.68rem;
     letter-spacing: 0.1em;
@@ -125,7 +124,6 @@
     font-size: 0.82rem;
     line-height: 1.5;
     word-break: break-all;
-    color: var(--ink);
     margin: 0;
   }
 
@@ -137,57 +135,139 @@
     background: var(--accent);
     border: 1px solid var(--accent);
     border-radius: 3px;
-    padding: 0.7rem 1rem;
+    padding: 0.65rem 1rem;
     cursor: pointer;
-    transition: opacity 0.15s ease;
+    align-self: flex-start;
   }
 
   button:hover { opacity: 0.88; }
   button:focus-visible { outline: 2px solid var(--ochre); outline-offset: 2px; }
   button[data-done="yes"] { background: var(--surface); color: var(--accent); }
 
-  /* ---- steps ---- */
-  section { display: flex; flex-direction: column; gap: 0.9rem; }
+  details { border-top: 1px solid var(--hair); padding-top: 0.9rem; }
 
-  h2 {
-    font-family: var(--display);
-    font-weight: 600;
+  summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.95rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  summary::before {
+    content: "+";
+    font-family: var(--mono);
+    color: var(--accent);
+    width: 0.9rem;
+  }
+
+  details[open] summary::before { content: "\2212"; }
+  summary:focus-visible { outline: 2px solid var(--ochre); outline-offset: 3px; }
+
+  .how { display: flex; flex-direction: column; gap: 0.55rem; padding: 0.9rem 0 0.2rem 1.4rem; }
+  .how p { margin: 0; font-size: 0.95rem; }
+  .how b { font-weight: 700; }
+  .how .sep { color: var(--muted); padding: 0 0.15rem; }
+
+  .warn {
+    background: var(--chip);
+    border-left: 3px solid var(--ochre);
+    padding: 0.8rem 0.95rem;
+    border-radius: 0 3px 3px 0;
+    font-size: 0.95rem;
+  }
+
+  .warn p { margin: 0; }
+  .warn b { color: var(--ochre); }
+
+  /* ---- figures ---- */
+  .figures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 1px;
+    background: var(--hair);
+    border: 1px solid var(--hair);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .fig { background: var(--surface); padding: 0.9rem 1rem; display: flex; flex-direction: column; gap: 0.1rem; }
+
+  .fig b {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
     font-size: 1.3rem;
-    letter-spacing: -0.01em;
-    margin: 0;
-    padding-bottom: 0.55rem;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  .fig span { font-size: 0.72rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); }
+
+  /* ---- act blocks ---- */
+  section { display: flex; flex-direction: column; gap: 0.25rem; }
+
+  .act {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 0.6rem;
     border-bottom: 2px solid var(--ink);
   }
 
-  ol { margin: 0; padding-left: 0; list-style: none; counter-reset: step; display: flex; flex-direction: column; gap: 0.75rem; }
+  .act h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.35rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
 
-  ol li {
-    counter-increment: step;
+  .act .range { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); white-space: nowrap; }
+
+  .row {
     display: grid;
-    grid-template-columns: 1.75rem 1fr;
-    gap: 0.75rem;
+    grid-template-columns: 2.6rem 1fr;
+    gap: 0 1rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--hair);
     align-items: baseline;
   }
 
-  ol li::before {
-    content: counter(step);
+  .num {
     font-family: var(--mono);
     font-variant-numeric: tabular-nums;
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     color: var(--accent);
+    padding-top: 0.15rem;
   }
 
-  .note {
-    background: var(--chip);
-    border-left: 3px solid var(--ochre);
-    padding: 0.9rem 1rem;
-    border-radius: 0 3px 3px 0;
+  .row h3 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.06rem;
+    line-height: 1.3;
+    margin: 0 0 0.2rem;
+    text-wrap: balance;
   }
 
-  .note p { margin: 0; font-size: 0.95rem; }
-  .note strong { color: var(--ochre); }
+  .row p { margin: 0; color: var(--muted); font-size: 0.94rem; }
 
-  .aside { color: var(--muted); font-size: 0.93rem; margin: 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.4rem; }
+
+  .tag {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .tag.feel { display: none; }
 
   footer {
     border-top: 1px solid var(--hair);
@@ -198,15 +278,9 @@
 
   footer p { margin: 0; }
 
-  a { color: var(--accent); text-underline-offset: 0.2em; }
-  a:focus-visible { outline: 2px solid var(--ochre); outline-offset: 2px; }
-
-  code {
-    font-family: var(--mono);
-    font-size: 0.86em;
-    background: var(--chip);
-    border-radius: 2px;
-    padding: 0.05em 0.3em;
+  @media (max-width: 30rem) {
+    .row { grid-template-columns: 2rem 1fr; }
+    body { padding-top: 2.25rem; }
   }
 </style>
 </head>
@@ -215,56 +289,270 @@
 <div class="wrap">
 
   <header>
-    <p class="eyebrow">Quiet Trails · Ganguddy</p>
+    <p class="eyebrow">Quiet Trails &middot; Ganguddy</p>
     <h1>Stories for the drive</h1>
-    <p class="standfirst">Thirty-seven short stories about the place we're going — the green river, the orange rocks, the bird in the leaves who can copy any sound she's heard. About five minutes each, near enough three hours all up. Every one ends with something to go and find.</p>
+    <p class="standfirst">Thirty-seven short stories about the place we&rsquo;re going &mdash; the green river, the orange rocks, the bird in the leaves who can copy any sound she&rsquo;s heard. About five minutes each. Every one ends with something to go and find.</p>
   </header>
 
-  <div class="feed">
+  <div class="add">
     <label for="feedurl">Feed address</label>
     <p class="url" id="feedurl">https://andrewcws.github.io/quiet-trails-packs/audio/index.xml</p>
     <button id="copy" type="button">Copy the address</button>
+
+    <div class="warn"><p><b>Download the episodes on wi-fi before you leave.</b> There&rsquo;s no reception at Ganguddy, and podcast apps stream by default.</p></div>
+
+    <details>
+      <summary>How to add it to your phone</summary>
+      <div class="how">
+        <p><b>iPhone</b> &mdash; Podcasts <span class="sep">&rarr;</span> Library <span class="sep">&rarr;</span> &bull;&bull;&bull; top right <span class="sep">&rarr;</span> Add a Show by URL <span class="sep">&rarr;</span> paste <span class="sep">&rarr;</span> Subscribe</p>
+        <p><b>Android</b> &mdash; AntennaPod <span class="sep">&rarr;</span> + <span class="sep">&rarr;</span> Add Podcast by RSS address <span class="sep">&rarr;</span> paste</p>
+        <p><b>Then</b> &mdash; open the show and tap the download arrow on each episode. About 180&nbsp;MB all up.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="figures">
+    <div class="fig"><b>37</b><span>Stories</span></div>
+    <div class="fig"><b>2:52</b><span>Total run</span></div>
+    <div class="fig"><b>4:38</b><span>Average</span></div>
   </div>
 
   <section>
-    <h2>On an iPhone</h2>
-    <ol>
-      <li>Open <strong>Podcasts</strong> — the purple app that came with the phone.</li>
-      <li>Tap <strong>Library</strong> along the bottom.</li>
-      <li>Tap the <strong>•••</strong> button in the top right corner.</li>
-      <li>Choose <strong>Add a Show by URL…</strong></li>
-      <li>Paste the address above and tap <strong>Subscribe</strong>.</li>
-    </ol>
-    <p class="aside">No account, no sign-in, nothing to pay. It just turns up in your library like any other show.</p>
+    <div class="act"><h2>The drive out</h2><span class="range">01 — 12</span></div>
+
+    <div class="row"><span class="num">01</span><div>
+      <h3>The List</h3>
+      <p>Billy's packing list survives contact with a family, and the one thing missing turns out to be findable.</p>
+      <div class="tags"><span class="tag kid">Billy</span><span class="tag feel">worried</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">02</span><div>
+      <h3>Too Much Stuff</h3>
+      <p>An enormous bag, a towbar weight plate, and choosing three things.</p>
+      <div class="tags"><span class="tag kid">Rori</span><span class="tag feel">disappointed</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">03</span><div>
+      <h3>Water You Can't Drink</h3>
+      <p>A tap left half-open, and why you boil a river that looks perfectly clean.</p>
+      <div class="tags"><span class="tag kid">Billy</span><span class="tag feel">relieved</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">04</span><div>
+      <h3>The Wood You Can't Burn</h3>
+      <p>Rolling a log over and finding a city underneath.</p>
+      <div class="tags"><span class="tag kid">Skye</span><span class="tag feel">proud</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">05</span><div>
+      <h3>Adi Packs a Bag</h3>
+      <p>Spoon, sock, rock, biscuit. A refrain story — "IN THE BAG!"</p>
+      <div class="tags"><span class="tag kid">Adi</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">06</span><div>
+      <h3>Four Hours</h3>
+      <p>The odometer, and the discovery that a drive has a halfway.</p>
+      <div class="tags"><span class="tag kid">Rori</span><span class="tag feel">impatient</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">07</span><div>
+      <h3>Where the Mountains Go Blue</h3>
+      <p>The far hills aren't blue — the air in front of them is.</p>
+      <div class="tags"><span class="tag kid">Billy</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">08</span><div>
+      <h3>The Last Shop</h3>
+      <p>Kandos main street, and a pair of tweezers nobody thought they needed.</p>
+      <div class="tags"><span class="tag kid">Billy</span><span class="tag feel">nervous</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">09</span><div>
+      <h3>The Grey Powder Town</h3>
+      <p>The green river exists because a cement works was thirsty.</p>
+      <div class="tags"><span class="tag kid">Rori</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">10</span><div>
+      <h3>The Road That Isn't Sealed</h3>
+      <p>The bitumen ends, Skye stops talking, then learns to read the road by ear.</p>
+      <div class="tags"><span class="tag kid">Skye</span><span class="tag feel">brave</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">11</span><div>
+      <h3>Adi Names Everything</h3>
+      <p>Horse, duck, eagle, one wallaby with a correction.</p>
+      <div class="tags"><span class="tag kid">Adi</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">12</span><div>
+      <h3>The Bird Who Was Waiting</h3>
+      <p>Rori runs at a lyrebird, loses it, sits still, and meets Echo.</p>
+      <div class="tags"><span class="tag kid">Rori</span><span class="tag feel">frustrated</span></div>
+    </div></div>
   </section>
 
   <section>
-    <h2>On an Android</h2>
-    <ol>
-      <li>Install <strong>AntennaPod</strong> — it's free and has no ads.</li>
-      <li>Tap the <strong>+</strong> button.</li>
-      <li>Choose <strong>Add Podcast by RSS address</strong>.</li>
-      <li>Paste the address and subscribe.</li>
-    </ol>
-    <p class="aside">Pocket Casts works too — paste the address into its search box and it'll find the feed.</p>
+    <div class="act"><h2>Making camp</h2><span class="range">13 — 17</span></div>
+
+    <div class="row"><span class="num">13</span><div>
+      <h3>The Box That Turns Into a House</h3>
+      <p>A camper trailer unfolds, and hinges are why.</p>
+      <div class="tags"><span class="tag kid">Billy</span><span class="tag feel">proud</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">14</span><div>
+      <h3>Poles, Pegs and Tangles</h3>
+      <p>You can't push a tent pole round a corner, and a peg leans away from the tent.</p>
+      <div class="tags"><span class="tag kid">Rori</span><span class="tag feel">frustrated</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">15</span><div>
+      <h3>The Fire That Wouldn't Start</h3>
+      <p>Plenty of smoke, no flame — a fire is a ladder you climb one size at a time.</p>
+      <div class="tags"><span class="tag kid">Rori</span><span class="tag feel">impatient</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">16</span><div>
+      <h3>Torches</h3>
+      <p>Four torches on had made them blinder than anyone there had ever been.</p>
+      <div class="tags"><span class="tag kid">Billy</span><span class="tag feel">brave</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">17</span><div>
+      <h3>What Was That Noise?</h3>
+      <p>A boobook at eleven o'clock, and the difference a name makes to a sound in the dark.</p>
+      <div class="tags"><span class="tag kid">Skye</span><span class="tag feel">nervous</span></div>
+    </div></div>
   </section>
 
   <section>
-    <h2>Before you leave</h2>
-    <div class="note">
-      <p><strong>Download every episode while you're still on wi-fi.</strong> There's no phone reception at Ganguddy, and podcast apps stream by default — so an episode you haven't downloaded is an episode that won't play at the park gate.</p>
-    </div>
-    <ol>
-      <li>Open the show and tap the download arrow on each episode. It's 37 taps and about 180&nbsp;MB — roughly one video of a kid jumping off a rock.</li>
-      <li>Wait until no episode still shows a little cloud icon.</li>
-      <li>Turn on <strong>Aeroplane Mode</strong> and play episode 1 for thirty seconds. If it plays, you're set.</li>
-    </ol>
-    <p class="aside">If the episodes are listed newest-first, pull down on the show page to refresh — they're meant to run 1 to 37 in order.</p>
+    <div class="act"><h2>At camp</h2><span class="range">18 — 32</span></div>
+
+    <div class="row"><span class="num">18</span><div>
+      <h3>The Rock That Grew Steps</h3>
+      <p>The pagodas weren't built — hard iron bands wear back slower than soft sandstone.</p>
+      <div class="tags"><span class="tag kid">Billy</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">19</span><div>
+      <h3>The Handwriting on the Tree</h3>
+      <p>Every scribble is one caterpillar's life, made public after it left.</p>
+      <div class="tags"><span class="tag kid">Skye</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">20</span><div>
+      <h3>The Laughing Family</h3>
+      <p>The laugh isn't a joke, it's a family drawing a boundary in sound.</p>
+      <div class="tags"><span class="tag kid">Billy</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">21</span><div>
+      <h3>The Slide in the Mud</h3>
+      <p>A polished groove, a burrow, and forty minutes that don't pay off.</p>
+      <div class="tags"><span class="tag kid">Rori</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">22</span><div>
+      <h3>The Animal That Broke the Rules</h3>
+      <p>The platypus hunts by feeling other animals' electricity.</p>
+      <div class="tags"><span class="tag kid">Billy</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">23</span><div>
+      <h3>Turtle Neck</h3>
+      <p>A long-neck crossing a track, and the smell that lasts two days.</p>
+      <div class="tags"><span class="tag kid">Skye</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">24</span><div>
+      <h3>Adi Sees a Wallaby</h3>
+      <p>A refrain story, and a family rule. "Freeze."</p>
+      <div class="tags"><span class="tag kid">Adi</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">25</span><div>
+      <h3>The Gliders Come Out</h3>
+      <p>Eyeshine in the branches, and a possum that gave up on branches.</p>
+      <div class="tags"><span class="tag kid">Rori</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">26</span><div>
+      <h3>Six Legs and a Thousand Eyes</h3>
+      <p>An empty insect still gripping a reed, split up the back.</p>
+      <div class="tags"><span class="tag kid">Skye</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">27</span><div>
+      <h3>Cold Water Courage</h3>
+      <p>The gasp is a reflex, and it passes in about a minute.</p>
+      <div class="tags"><span class="tag kid">Rori</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">28</span><div>
+      <h3>The Mud Dam</h3>
+      <p>Rori builds tall and fast; Billy digs a trench first.</p>
+      <div class="tags"><span class="tag kid">Billy</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">29</span><div>
+      <h3>The Stone That Skipped Eight</h3>
+      <p>Billy stops throwing and starts watching. Spin is the bit nobody sees.</p>
+      <div class="tags"><span class="tag kid">Billy</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">30</span><div>
+      <h3>Nothing Is Biting</h3>
+      <p>Two and a half hours, no fish, and Rori's best afternoon.</p>
+      <div class="tags"><span class="tag kid">Rori</span><span class="tag feel">impatient</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">31</span><div>
+      <h3>Damper, Ash and Patience</h3>
+      <p>Coals not flames, and don't lift the lid.</p>
+      <div class="tags"><span class="tag kid">Skye</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">32</span><div>
+      <h3>The House of Sticks</h3>
+      <p>Find the ridge, lean everything onto it — and Adi makes the door.</p>
+      <div class="tags"><span class="tag kid">Adi</span></div>
+    </div></div>
   </section>
 
   <section>
-    <h2>What's in it</h2>
-    <p class="aside">Thirty-seven stories: twelve for the drive out, five on setting up camp, fifteen at camp, five for the way home. <a href="stories.html">See the full list</a>.</p>
+    <div class="act"><h2>Going home</h2><span class="range">33 — 37</span></div>
+
+    <div class="row"><span class="num">33</span><div>
+      <h3>The Fog That Sat on the Water</h3>
+      <p>Cold air pools in a valley, and nobody believes her afterwards.</p>
+      <div class="tags"><span class="tag kid">Skye</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">34</span><div>
+      <h3>The Stars Nobody Owns</h3>
+      <p>The Milky Way, the Pointers, and Echo declining to tell a story that isn't hers.</p>
+      <div class="tags"><span class="tag kid">Rori</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">35</span><div>
+      <h3>Leave No Trace</h3>
+      <p>Why there are no bins, and making a campsite vanish.</p>
+      <div class="tags"><span class="tag kid">Billy</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">36</span><div>
+      <h3>Adi Says Goodbye</h3>
+      <p>She says bye to the fire, the water, a lizard hole, and the toilet.</p>
+      <div class="tags"><span class="tag kid">Adi</span></div>
+    </div></div>
+
+    <div class="row"><span class="num">37</span><div>
+      <h3>What We Took Home</h3>
+      <p>Her rock is at the bottom of the river, and it turns out not to matter.</p>
+      <div class="tags"><span class="tag kid">Rori</span></div>
+    </div></div>
   </section>
 
   <footer>
@@ -278,36 +566,37 @@
     var btn = document.getElementById('copy');
     var url = document.getElementById('feedurl').textContent.trim();
 
-    btn.addEventListener('click', function () {
-      function done() {
-        btn.textContent = 'Copied';
-        btn.setAttribute('data-done', 'yes');
-        setTimeout(function () {
-          btn.textContent = 'Copy the address';
-          btn.removeAttribute('data-done');
-        }, 2000);
-      }
+    function done() {
+      btn.textContent = 'Copied';
+      btn.setAttribute('data-done', 'yes');
+      setTimeout(function () {
+        btn.textContent = 'Copy the address';
+        btn.removeAttribute('data-done');
+      }, 2000);
+    }
 
+    function fallback() {
+      var box = document.createElement('textarea');
+      box.value = url;
+      box.setAttribute('readonly', '');
+      box.style.position = 'fixed';
+      box.style.opacity = '0';
+      document.body.appendChild(box);
+      box.select();
+      try { document.execCommand('copy'); done(); }
+      catch (e) { btn.textContent = 'Select the address above to copy'; }
+      document.body.removeChild(box);
+    }
+
+    btn.addEventListener('click', function () {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(url).then(done, fallback);
       } else {
         fallback();
       }
-
-      function fallback() {
-        var box = document.createElement('textarea');
-        box.value = url;
-        box.setAttribute('readonly', '');
-        box.style.position = 'fixed';
-        box.style.opacity = '0';
-        document.body.appendChild(box);
-        box.select();
-        try { document.execCommand('copy'); done(); }
-        catch (e) { btn.textContent = 'Select the address above to copy'; }
-        document.body.removeChild(box);
-      }
     });
   })();
 </script>
+
 </body>
 </html>
