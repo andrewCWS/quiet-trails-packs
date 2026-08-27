@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Thirty-seven short stories for the drive to Ganguddy. How to add them on iPhone or Android.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Stories for the Drive — Quiet Trails">
+<meta property="og:description" content="Thirty-seven short stories for the drive to Ganguddy. How to add them on iPhone or Android.">
+<meta property="og:type" content="website">
+<title>Stories for the Drive — Quiet Trails</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  :root {
+    --ground:  #E9EDE4;
+    --surface: #F5F7F1;
+    --ink:     #17211A;
+    --muted:   #5B6A59;
+    --hair:    #CBD4C4;
+    --accent:  #2F6B4F;
+    --onaccent:#F5F7F1;
+    --ochre:   #9E5426;
+    --chip:    #DDE4D6;
+
+    --display: "Fraunces", Georgia, "Times New Roman", serif;
+    --body:    "Karla", "Helvetica Neue", Arial, sans-serif;
+    --mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:  #101710;
+      --surface: #17201A;
+      --ink:     #E4E9DE;
+      --muted:   #93A392;
+      --hair:    #29342A;
+      --accent:  #82C39C;
+      --onaccent:#101710;
+      --ochre:   #D08A52;
+      --chip:    #222C24;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:  #101710;
+    --surface: #17201A;
+    --ink:     #E4E9DE;
+    --muted:   #93A392;
+    --hair:    #29342A;
+    --accent:  #82C39C;
+    --onaccent:#101710;
+    --ochre:   #D08A52;
+    --chip:    #222C24;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 3rem 1.25rem 5rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 34rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.75rem;
+  }
+
+  header { display: flex; flex-direction: column; gap: 0.85rem; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0;
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 9vw, 2.9rem);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .standfirst { margin: 0; color: var(--muted); }
+
+  /* ---- the feed ---- */
+  .feed {
+    background: var(--surface);
+    border: 1px solid var(--hair);
+    border-radius: 3px;
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .feed label {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .url {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    line-height: 1.5;
+    word-break: break-all;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  button {
+    font-family: var(--body);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--onaccent);
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+  }
+
+  button:hover { opacity: 0.88; }
+  button:focus-visible { outline: 2px solid var(--ochre); outline-offset: 2px; }
+  button[data-done="yes"] { background: var(--surface); color: var(--accent); }
+
+  /* ---- steps ---- */
+  section { display: flex; flex-direction: column; gap: 0.9rem; }
+
+  h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+    padding-bottom: 0.55rem;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  ol { margin: 0; padding-left: 0; list-style: none; counter-reset: step; display: flex; flex-direction: column; gap: 0.75rem; }
+
+  ol li {
+    counter-increment: step;
+    display: grid;
+    grid-template-columns: 1.75rem 1fr;
+    gap: 0.75rem;
+    align-items: baseline;
+  }
+
+  ol li::before {
+    content: counter(step);
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.82rem;
+    color: var(--accent);
+  }
+
+  .note {
+    background: var(--chip);
+    border-left: 3px solid var(--ochre);
+    padding: 0.9rem 1rem;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .note p { margin: 0; font-size: 0.95rem; }
+  .note strong { color: var(--ochre); }
+
+  .aside { color: var(--muted); font-size: 0.93rem; margin: 0; }
+
+  footer {
+    border-top: 1px solid var(--hair);
+    padding-top: 1.25rem;
+    color: var(--muted);
+    font-size: 0.86rem;
+  }
+
+  footer p { margin: 0; }
+
+  a { color: var(--accent); text-underline-offset: 0.2em; }
+  a:focus-visible { outline: 2px solid var(--ochre); outline-offset: 2px; }
+
+  code {
+    font-family: var(--mono);
+    font-size: 0.86em;
+    background: var(--chip);
+    border-radius: 2px;
+    padding: 0.05em 0.3em;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Quiet Trails · Ganguddy</p>
+    <h1>Stories for the drive</h1>
+    <p class="standfirst">Thirty-seven short stories about the place we're going — the green river, the orange rocks, the bird in the leaves who can copy any sound she's heard. About five minutes each, near enough three hours all up. Every one ends with something to go and find.</p>
+  </header>
+
+  <div class="feed">
+    <label for="feedurl">Feed address</label>
+    <p class="url" id="feedurl">https://andrewcws.github.io/quiet-trails-packs/audio/index.xml</p>
+    <button id="copy" type="button">Copy the address</button>
+  </div>
+
+  <section>
+    <h2>On an iPhone</h2>
+    <ol>
+      <li>Open <strong>Podcasts</strong> — the purple app that came with the phone.</li>
+      <li>Tap <strong>Library</strong> along the bottom.</li>
+      <li>Tap the <strong>•••</strong> button in the top right corner.</li>
+      <li>Choose <strong>Add a Show by URL…</strong></li>
+      <li>Paste the address above and tap <strong>Subscribe</strong>.</li>
+    </ol>
+    <p class="aside">No account, no sign-in, nothing to pay. It just turns up in your library like any other show.</p>
+  </section>
+
+  <section>
+    <h2>On an Android</h2>
+    <ol>
+      <li>Install <strong>AntennaPod</strong> — it's free and has no ads.</li>
+      <li>Tap the <strong>+</strong> button.</li>
+      <li>Choose <strong>Add Podcast by RSS address</strong>.</li>
+      <li>Paste the address and subscribe.</li>
+    </ol>
+    <p class="aside">Pocket Casts works too — paste the address into its search box and it'll find the feed.</p>
+  </section>
+
+  <section>
+    <h2>Before you leave</h2>
+    <div class="note">
+      <p><strong>Download every episode while you're still on wi-fi.</strong> There's no phone reception at Ganguddy, and podcast apps stream by default — so an episode you haven't downloaded is an episode that won't play at the park gate.</p>
+    </div>
+    <ol>
+      <li>Open the show and tap the download arrow on each episode. It's 37 taps and about 180&nbsp;MB — roughly one video of a kid jumping off a rock.</li>
+      <li>Wait until no episode still shows a little cloud icon.</li>
+      <li>Turn on <strong>Aeroplane Mode</strong> and play episode 1 for thirty seconds. If it plays, you're set.</li>
+    </ol>
+    <p class="aside">If the episodes are listed newest-first, pull down on the show page to refresh — they're meant to run 1 to 37 in order.</p>
+  </section>
+
+  <section>
+    <h2>What's in it</h2>
+    <p class="aside">Thirty-seven stories: twelve for the drive out, five on setting up camp, fifteen at camp, five for the way home. <a href="stories.html">See the full list</a>.</p>
+  </section>
+
+  <footer>
+    <p>Made for the trip. The kids in them are Rori, Billy, Skye and Adi, so expect some commentary from the back seat.</p>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var btn = document.getElementById('copy');
+    var url = document.getElementById('feedurl').textContent.trim();
+
+    btn.addEventListener('click', function () {
+      function done() {
+        btn.textContent = 'Copied';
+        btn.setAttribute('data-done', 'yes');
+        setTimeout(function () {
+          btn.textContent = 'Copy the address';
+          btn.removeAttribute('data-done');
+        }, 2000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done, fallback);
+      } else {
+        fallback();
+      }
+
+      function fallback() {
+        var box = document.createElement('textarea');
+        box.value = url;
+        box.setAttribute('readonly', '');
+        box.style.position = 'fixed';
+        box.style.opacity = '0';
+        document.body.appendChild(box);
+        box.select();
+        try { document.execCommand('copy'); done(); }
+        catch (e) { btn.textContent = 'Select the address above to copy'; }
+        document.body.removeChild(box);
+      }
+    });
+  })();
+</script>
+</body>
+</html>
