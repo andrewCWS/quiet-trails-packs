@@ -1,5 +1,7 @@
 # Story 2 — Too Much Stuff
 
+**Matrix:** story 2 in the 50-story plan
+
 **Mode:** Prose · **Key kid:** Rori · **Category:** Trip prep · **Arc:** Trickster
 **Stretch words:** enormous, decide, spare
 **Feeling:** disappointed, named once

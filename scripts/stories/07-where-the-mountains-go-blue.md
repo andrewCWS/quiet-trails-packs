@@ -1,5 +1,7 @@
 # Story 7 — Where the Mountains Go Blue
 
+**Matrix:** story 7 in the 50-story plan
+
 **Mode:** Prose · **Key kid:** Billy · **Category:** Rock & sky · **Arc:** How-it-works
 **Stretch words:** scatter, haze, distant
 **Feeling:** not named in this one — see the ratio rule

@@ -1,5 +1,7 @@
 # Story 5 — Adi Packs a Bag
 
+**Matrix:** story 5 in the 50-story plan
+
 **Mode:** Refrain · **Key kid:** Adi · **Category:** Trip prep
 **Stretch words:** none — this one is a shouting story
 **Feeling:** none named. It's a happy one.

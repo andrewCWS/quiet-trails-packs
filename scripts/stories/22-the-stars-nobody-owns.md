@@ -1,4 +1,6 @@
-# Story 47 — The Stars Nobody Owns
+# Story 22 — The Stars Nobody Owns
+
+**Matrix:** story 47 in the 50-story plan
 
 **Mode:** Prose · **Key kid:** Rori · **Category:** Weather & sky
 **Stretch words:** constellation, pointers, horizon

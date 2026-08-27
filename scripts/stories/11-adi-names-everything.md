@@ -1,5 +1,7 @@
 # Story 11 — Adi Names Everything
 
+**Matrix:** story 11 in the 50-story plan
+
 **Mode:** Refrain · **Key kid:** Adi · **Category:** Birds & animals
 **Stretch words:** none — this one is a shouting story
 **Feeling:** none named. It's a happy one.

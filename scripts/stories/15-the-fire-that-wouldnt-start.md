@@ -1,4 +1,6 @@
-# Story 53 — The Fire That Wouldn't Start
+# Story 15 — The Fire That Wouldn't Start
+
+**Matrix:** story 53 in the 50-story plan
 
 **Mode:** Prose · **Key kid:** Rori · **Category:** Camp craft · **Arc:** Patience
 **Stretch words:** kindling, oxygen, gradual

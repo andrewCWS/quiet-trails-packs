@@ -1,4 +1,6 @@
-# Story 55 — What Was That Noise?
+# Story 17 — What Was That Noise?
+
+**Matrix:** story 55 in the 50-story plan
 
 **Mode:** Prose · **Key kid:** Skye · **Category:** Camp craft · **Arc:** Mystery
 **Stretch words:** identify, nocturnal, echo (the sound, not the bird)

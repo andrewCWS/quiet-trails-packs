@@ -1,5 +1,7 @@
 # Story 9 — The Grey Powder Town
 
+**Matrix:** story 9 in the 50-story plan
+
 **Mode:** Prose · **Key kid:** Rori · **Category:** Water & the weir · **Arc:** Time-slip
 **Stretch words:** concrete, factory, century
 **Feeling:** not named in this one

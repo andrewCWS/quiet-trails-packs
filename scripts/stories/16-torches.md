@@ -1,4 +1,6 @@
-# Story 54 — Torches
+# Story 16 — Torches
+
+**Matrix:** story 54 in the 50-story plan
 
 **Mode:** Prose · **Key kid:** Billy · **Category:** Camp craft · **Arc:** Overcoming fear
 **Stretch words:** beam, adjust, pupil

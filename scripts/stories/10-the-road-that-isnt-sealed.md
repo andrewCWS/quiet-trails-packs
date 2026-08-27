@@ -1,5 +1,7 @@
 # Story 10 — The Road That Isn't Sealed
 
+**Matrix:** story 10 in the 50-story plan
+
 **Mode:** Prose · **Key kid:** Skye · **Category:** The drive · **Arc:** Overcoming fear
 **Stretch words:** sealed, corrugated, surface
 **Feeling:** brave, named once

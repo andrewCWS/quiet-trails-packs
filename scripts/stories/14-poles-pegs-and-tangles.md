@@ -1,4 +1,6 @@
-# Story 52 — Poles, Pegs and Tangles
+# Story 14 — Poles, Pegs and Tangles
+
+**Matrix:** story 52 in the 50-story plan
 
 **Mode:** Prose · **Key kid:** Rori · **Category:** Camp craft · **Arc:** Overcoming a hard thing
 **Stretch words:** thread, angle, tension

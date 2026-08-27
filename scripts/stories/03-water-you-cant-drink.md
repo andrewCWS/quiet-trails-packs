@@ -1,5 +1,7 @@
 # Story 3 — Water You Can't Drink
 
+**Matrix:** story 3 in the 50-story plan
+
 **Mode:** Prose · **Key kid:** Billy · **Category:** Trip prep · **Arc:** How-it-works
 **Stretch words:** supply, invisible, boil
 **Feeling:** relieved, named once

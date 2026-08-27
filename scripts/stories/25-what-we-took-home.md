@@ -1,4 +1,6 @@
-# Story 50 — What We Took Home
+# Story 25 — What We Took Home
+
+**Matrix:** story 50 in the 50-story plan
 
 **Mode:** Prose · **Key kid:** Rori · **Category:** Going home · **Arc:** Voyage & return
 **Stretch words:** souvenir, ordinary, remember

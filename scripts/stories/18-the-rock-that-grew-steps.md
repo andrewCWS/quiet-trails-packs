@@ -1,4 +1,6 @@
-# Story 13 — The Rock That Grew Steps
+# Story 18 — The Rock That Grew Steps
+
+**Matrix:** story 13 in the 50-story plan
 
 **Mode:** Prose · **Key kid:** Billy · **Category:** Rock & geology · **Arc:** Mystery
 **Stretch words:** ancient, erode, band

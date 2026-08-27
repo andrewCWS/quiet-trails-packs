@@ -1,5 +1,7 @@
 # Story 12 — The Bird Who Was Waiting
 
+**Matrix:** story 12 in the 50-story plan
+
 **Mode:** Prose · **Key kid:** Rori · **Category:** Birds
 **Stretch words:** mimic (x3), patient (x1 — it's the story's point, not vocabulary)
 **Feeling:** frustrated, named once

@@ -1,4 +1,6 @@
-# Story 48 — Leave No Trace
+# Story 23 — Leave No Trace
+
+**Matrix:** story 48 in the 50-story plan
 
 **Mode:** Prose · **Key kid:** Billy · **Category:** Trip logistics · **Arc:** How-it-works
 **Stretch words:** trace, scrap, vanish

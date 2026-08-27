@@ -1,4 +1,6 @@
-# Story 22 — The Laughing Family
+# Story 20 — The Laughing Family
+
+**Matrix:** story 22 in the 50-story plan
 
 **Mode:** Prose · **Key kid:** Billy · **Category:** Birds · **Arc:** Trickster
 **Stretch words:** territory, chorus, kingfisher

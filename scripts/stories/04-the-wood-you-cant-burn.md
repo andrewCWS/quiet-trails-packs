@@ -1,5 +1,7 @@
 # Story 4 — The Wood You Can't Burn
 
+**Matrix:** story 4 in the 50-story plan
+
 **Mode:** Prose · **Key kid:** Skye · **Category:** Trip prep · **Arc:** Small-one-saves
 **Stretch words:** hollow, shelter, gather
 **Feeling:** proud, named once

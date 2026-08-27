@@ -1,4 +1,6 @@
-# Story 51 — The Box That Turns Into a House
+# Story 13 — The Box That Turns Into a House
+
+**Matrix:** story 51 in the 50-story plan
 
 **Mode:** Prose · **Key kid:** Billy · **Category:** Camp craft · **Arc:** How-it-works
 **Stretch words:** hinge, unfold, structure

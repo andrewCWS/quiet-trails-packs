@@ -1,4 +1,6 @@
-# Story 15 — The Handwriting on the Tree
+# Story 19 — The Handwriting on the Tree
+
+**Matrix:** story 15 in the 50-story plan
 
 **Mode:** Prose · **Key kid:** Skye · **Category:** Insects & small things · **Arc:** Mystery
 **Stretch words:** tunnel, hatch, retrace

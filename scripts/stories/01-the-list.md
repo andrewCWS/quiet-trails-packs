@@ -1,5 +1,7 @@
 # Story 1 — The List
 
+**Matrix:** story 1 in the 50-story plan
+
 **Mode:** Prose · **Key kid:** Billy · **Category:** Trip prep
 **Stretch words:** essential, disaster, sensible
 **Feeling:** worried, named once

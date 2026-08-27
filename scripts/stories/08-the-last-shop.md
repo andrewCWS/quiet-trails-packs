@@ -1,5 +1,7 @@
 # Story 8 — The Last Shop
 
+**Matrix:** story 8 in the 50-story plan
+
 **Mode:** Prose · **Key kid:** Billy · **Category:** Trip logistics · **Arc:** Quest
 **Stretch words:** supplies, remote, final
 **Feeling:** nervous, named once

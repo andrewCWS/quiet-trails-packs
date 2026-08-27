@@ -1,5 +1,7 @@
 # Story 6 — Four Hours
 
+**Matrix:** story 6 in the 50-story plan
+
 **Mode:** Prose · **Key kid:** Rori · **Category:** The drive · **Arc:** Voyage & return
 **Stretch words:** distance, halfway, journey
 **Feeling:** impatient, named once

@@ -1,4 +1,6 @@
-# Story 49 — Adi Says Goodbye
+# Story 24 — Adi Says Goodbye
+
+**Matrix:** story 49 in the 50-story plan
 
 **Mode:** Refrain · **Key kid:** Adi · **Category:** Going home
 **Stretch words:** none — this one is a saying-goodbye story
