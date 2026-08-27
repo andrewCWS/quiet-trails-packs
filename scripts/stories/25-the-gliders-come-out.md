@@ -4,6 +4,7 @@
 
 **Mode:** Prose · **Key kid:** Rori · **Category:** Animals · **Arc:** Overcoming fear
 **Stretch words:** glide, membrane, reflect
+**Species:** common brushtail possum · greater glider
 **Feeling:** not named in this one
 **Word count:** ~1060
 **Voices:** NARRATOR and ECHO. Echo sets the mission.
@@ -35,7 +36,7 @@ It also means that when your torch beam hits them, the light comes straight back
 
 This is called eyeshine, and once you've seen it you will never stop looking for it.
 
-They found a possum almost immediately, low down, which was excellent and slightly disappointing because everyone had wanted the other thing.
+They found a brushtail possum almost immediately, low down, with a black bushy tail and an expression of total indifference, which was excellent and slightly disappointing because everyone had wanted the other thing.
 
 Then Skye — who had been narrating the entire walk, including the parts where nothing happened — went silent mid-word.
 
@@ -91,7 +92,7 @@ Go out after dark. Properly out, past the light.
 
 Hold the torch beside your ear and sweep it slowly through the branches. Look for two dots.
 
-Low and close together is a possum. High and wide apart is something better.
+Low and close together is a brushtail. High and wide apart is something better.
 
 And when you've found a pair of eyes, turn the torch off and stand there. They're still looking at you. That's the whole point of the mission.
 

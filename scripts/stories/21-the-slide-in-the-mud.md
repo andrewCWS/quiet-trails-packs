@@ -48,7 +48,7 @@ Here is what happened over the next forty minutes.
 
 A duck. Twice.
 
-A fish rising, which makes a ring almost exactly like the ring they were waiting for, and got everybody four separate times.
+A redfin rising, which makes a ring almost exactly like the ring they were waiting for, and got everybody four separate times.
 
 A stick floating past that was, for approximately eleven seconds, absolutely definitely a platypus.
 

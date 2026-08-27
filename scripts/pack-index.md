@@ -90,12 +90,17 @@ life disappointed", and story 23's naming Rori embarrassed for doing a kind thin
 The spec asks for things specific to this place. These are the remaining generic
 mentions worth a decision. None are wrong; they're just unspecific.
 
-| # | Currently | Options | Note |
-|---|---|---|---|
-| 21, 30 | "a fish" (×4) | Australian bass, eel-tailed catfish, carp | Needs a real answer for the weir — I'd rather you check what's actually caught there than guess |
-| 25 | "a possum" (×3) | common brushtail, common ringtail | Different animals; brushtail is the likely campsite one |
-| 36 | "a lizard" (hole) | eastern water skink, garden skink | Story 4 already says "small brown skink" — could match |
-| 26 | "the reeds" | common reed, cumbungi | Low priority |
+| # | Was | Now |
+|---|---|---|
+| 21, 30 | "a fish" (×4) | **redfin** — named once in each, with a line in 30 on why it doesn't go back in |
+| 25 | "a possum" (×3) | **common brushtail** — black bushy tail, total indifference |
+
+Still open, both low priority:
+
+| # | Currently | Options |
+|---|---|---|
+| 36 | "a lizard" (hole) | eastern water skink, garden skink — story 4 already says "small brown skink" |
+| 26 | "the reeds" | common reed, cumbungi |
 
 Deliberately generic and should stay that way:
 

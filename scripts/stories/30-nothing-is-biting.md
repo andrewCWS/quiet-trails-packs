@@ -4,6 +4,7 @@
 
 **Mode:** Prose · **Key kid:** Rori · **Category:** Activities · **Arc:** Patience
 **Stretch words:** float, bite, still
+**Species:** redfin (introduced) — the fish you're most likely to see in the weir
 **Feeling:** impatient, named once
 **Word count:** ~1070
 **Voices:** NARRATOR and ECHO. Echo sets the mission.
@@ -44,17 +45,19 @@ Sat down.
 
 And somewhere around the forty-minute mark, without deciding to, she stopped noticing that she was waiting.
 
-The float was still doing nothing. But now she could see other things: a water skater making dents in the surface without breaking it. A line of tiny bubbles coming up from somewhere near the reeds. The way the reflection of the rock wall broke up and put itself back together every time a bit of wind came through. A fish — a real one, small — turning under the surface about two metres from her float, entirely uninterested in it.
+The float was still doing nothing. But now she could see other things: a water skater making dents in the surface without breaking it. A line of tiny bubbles coming up from somewhere near the reeds. The way the reflection of the rock wall broke up and put itself back together every time a bit of wind came through. A redfin — a real one, small, with dark bars down its side — turning under the surface about two metres from her float, entirely uninterested in it.
 
 She stopped talking about the float and started reporting.
 
-"There's a fish."
+"There's a redfin."
 
 "Where?"
 
 "There. There's another one. They're just — there's heaps, they're just not eating it."
 
 That's usually the answer. The fish are nearly always there. They are simply not hungry, or not hungry for that, or not hungry there.
+
+Redfin are the ones you're most likely to see here, and they're not from here — they were brought out from England a long time ago and they liked it. Which is why, if you ever catch one, it doesn't go back in.
 
 Billy got a bite at about an hour, and lost it, and was philosophical in a way that fooled nobody.
 
@@ -94,4 +97,4 @@ There will be three. There are always three. They were there the whole time.
 
 **NARRATOR:** And then she was gone, without a sound.
 
-Rori's three were: a fish turning, the bubbles by the reeds, and a bird she couldn't name that walked on the very tops of the lily pads without going in.
+Rori's three were: the redfin turning, the bubbles by the reeds, and a bird she couldn't name that walked on the very tops of the lily pads without going in.
